@@ -1,0 +1,2 @@
+Formato de las consolas:
+ps3, ps4, xbox-360, xbox-one, nintendo-switch, nintendo-3ds

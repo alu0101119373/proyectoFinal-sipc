@@ -1,3 +1,4 @@
 Formato de las imagenes: 271x377
 Como buscar imagenes en Google Imagenes con un formato concreto: En el buscador, seguido de lo que quieras buscar, añades 'imagesize:ANCHOxALTO'.
 Ejemplo: batman arkham origins imagesize:271x377
+
