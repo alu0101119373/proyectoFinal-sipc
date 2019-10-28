@@ -3,22 +3,22 @@
 <?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
 
 <colection>
-    <game type="ps3 xbox-360" title="Batman: Arkham Asylum" year="28/08/2009">
+    <game type="ps3 xbox-360" title="Batman: Arkham Asylum" year="28-08-2009">
         <picture src="../img/batman_arkham_asylum.jpg"/>
         <description>La historia de Arkham Asylum se basa en la saga de Mythos, donde El Joker ha elaborado un plan para liberar a los mayores enemigos de Batman que se encuentran encerrados en el manicomio de Arkham. Batman investiga sobre el caso y descubre que lo que quiere el Joker es una toxina de superesteroides llamada «Títan» y usarla para crear un ejército de monstruos que destruya Gotham City.</description>
     </game>
 
-    <game type="ps3 xbox-360" title="Batman: Arkham City" year="21/10/2011">
+    <game type="ps3 xbox-360" title="Batman: Arkham City" year="21-10-2011">
         <picture src="../img/batman_arkham_city.jpg"/>
         <description>La trama principal gira en torno al encarcelamiento de Bruce Wayne (Batman) en Arkham City; una extensa y nueva ciudad convertida en una súper-prisión cinco veces más grande que el mapa de la entrega anterior, incluyendo una amplia variedad de distritos industriales, lugares emblemáticos y monumentos de Gotham City.</description>
     </game>
 
-    <game type="ps3 xbox-360" title="Batman: Arkham Origins" year="25/10/2015">
+    <game type="ps3 xbox-360" title="Batman: Arkham Origins" year="25-10-2015">
         <picture src="../img/batman_arkham_origins.jpg"/>
         <description>Tras dos años de descanso, Batman vuelve para contarnos cómo fueron sus orígenes, en una nueva y apasionante aventura que sigue a pies juntillas la línea trazada en Arkham City, pero ahora bajo la batuta de otro estudio desarrollador.</description>
     </game>
 
-    <game type="ps4 xbox-one" title="Batman: Arkham Knight" year="23/06/2015">
+    <game type="ps4 xbox-one" title="Batman: Arkham Knight" year="23-06-2015">
         <picture src="../img/batman_arkham_knight.jpg"/>
         <description>Batman: Arkham Knight para PS4 es un nuevo videojuego de Batman que cerrará la saga "Arkham" del personaje de DC Comics en los videojuegos. Desarrollado por los creadores de Arkham Asylum y Arkham City, el título tiene lugar un año después de los sucesos de éste, enfrentándose Batman de nuevo a un grupo de villanos, liderados por el misterioso Arkham Knight. Volveremos a contar con libertad para explorar Gotham, y esta vez podremos conducir el Batmóvil.</description>
     </game>
