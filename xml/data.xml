@@ -22,4 +22,9 @@
         <picture src="../img/batman_arkham_knight.jpg"/>
         <description>Batman: Arkham Knight para PS4 es un nuevo videojuego de Batman que cerrará la saga "Arkham" del personaje de DC Comics en los videojuegos. Desarrollado por los creadores de Arkham Asylum y Arkham City, el título tiene lugar un año después de los sucesos de éste, enfrentándose Batman de nuevo a un grupo de villanos, liderados por el misterioso Arkham Knight. Volveremos a contar con libertad para explorar Gotham, y esta vez podremos conducir el Batmóvil.</description>
     </game>
+
+    <game type="nintendo-3ds" title="pokemon sol/luna" year="23-11-2016">
+        <picture src="../img/pokemon_sol_luna.jpg"/>
+        <description>Pokémon Sol y Luna son dos videojuegos para las consolas de la familia de Nintendo 3DS, que inician la septima generación, situandose el juego en la región tropical de Alola.</description>
+    </game>
 </colection>
