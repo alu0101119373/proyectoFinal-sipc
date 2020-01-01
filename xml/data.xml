@@ -3,34 +3,219 @@
 <?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
 
 <colection>
-    <game type="ps3 xbox-360" title="Batman: Arkham Asylum" year="28-08-2009">
+    <game id="000" type="ps3 xbox-360" title="Batman: Arkham Asylum" year="28-08-2009" dt="Eidos interactive, Warner Bros. Interactive enterteinment, Square Enix, Feral Interactive" dv="Rocksteady Studios, Feral Interactive, Virtuos">
         <picture src="../img/batman_arkham_asylum.jpg"/>
         <description>La historia de Arkham Asylum se basa en la saga de Mythos, donde El Joker ha elaborado un plan para liberar a los mayores enemigos de Batman que se encuentran encerrados en el manicomio de Arkham. Batman investiga sobre el caso y descubre que lo que quiere el Joker es una toxina de superesteroides llamada «Títan» y usarla para crear un ejército de monstruos que destruya Gotham City.</description>
         <trophies>
-            <trophy title="¡Bang!">
-                <picture src="../img/trophies/bas_bang.jpg"/>
+            <trophy title="¡Bang!" type="">
                 <description>Has de completar el juego en la mínima dificultad.</description>
             </trophy>
         </trophies>
     </game>
 
-    <game type="ps3 xbox-360" title="Batman: Arkham City" year="21-10-2011">
+    <game id="001" type="ps3 xbox-360" title="Batman: Arkham City" year="21-10-2011" dt="Warner Bros. Interactive Entertainment" dv="Rocksteady Studios, Warner Bros Games Montreal, Virtuos Games" >
         <picture src="../img/batman_arkham_city.jpg"/>
         <description>La trama principal gira en torno al encarcelamiento de Bruce Wayne (Batman) en Arkham City; una extensa y nueva ciudad convertida en una súper-prisión cinco veces más grande que el mapa de la entrega anterior, incluyendo una amplia variedad de distritos industriales, lugares emblemáticos y monumentos de Gotham City.</description>
+        <trophies>
+            <trophy title="Platino" type="platinum">
+                <description>¡Enhorabuena!</description>
+            </trophy>
+            <trophy title="Caballero perfecto, Día 2" type="gold">
+                <description>Completa todos los desafíos en Arkham City - Historia ppal., M. paralelas, Mejoras, Coleccionables, Nuevo Juego Plus, Desafíos Riddler (Batman)</description>
+            </trophy>
+            <trophy title="Tormenta de arena" type="silver">
+                <description>Somos legión</description>
+            </trophy>
+            <trophy title="Bola de demolición" type="silver">
+                <description>Parar lo imparable</description>
+            </trophy>
+            <trophy title="Soy Batman" type="bronze">
+                <description>Conviértete en el Murciélago</description>
+            </trophy>
+            <trophy title="Baño de ácido" type="bronze">
+                <description>Salva a la doncella, pero, ¿está en apuros?</description>
+            </trophy>
+            <trophy title="Salvador" type="bronze">
+                <description>Salva a los voluntarios médicos</description>
+            </trophy>
+        </trophies>
     </game>
 
-    <game type="ps3 xbox-360" title="Batman: Arkham Origins" year="25-10-2015">
+    <game id="002" type="ps3 xbox-360" title="Batman: Arkham Origins" year="25-10-2015" dt="Warner Bros. Interactive Entertainment" dv="Warner Bros Games Montreal, Iron Galaxy Studios, Human Head Studios">
         <picture src="../img/batman_arkham_origins.jpg"/>
         <description>Tras dos años de descanso, Batman vuelve para contarnos cómo fueron sus orígenes, en una nueva y apasionante aventura que sigue a pies juntillas la línea trazada en Arkham City, pero ahora bajo la batuta de otro estudio desarrollador.</description>
+        <trophies>
+            <trophy title="Platino" type="platinum">
+                <description>¡Magnífico!</description>
+            </trophy>
+            <trophy title="Yo soy la noche" type="gold">
+                <description>Completa el modo: "Yo soy la noche".</description>
+            </trophy>
+            <trophy title="Los inocentes y los malhechores" type="silver">
+                <description>Captura a todos los asesinos de Máscara Negra.</description>
+            </trophy>
+            <trophy title="El primero de muchos" type="bronze">
+                <description>Completa una entrada de los más buscados.</description>
+            </trophy>
+            <trophy title="Caballero silencioso" type="bronze">
+                <description>Completa un encuentro de depredador únicamente con eliminaciones silenciosas en la historia principal.</description>
+            </trophy>
+        </trophies>
     </game>
 
-    <game type="ps4 xbox-one" title="Batman: Arkham Knight" year="23-06-2015">
+    <game id="003" type="ps4 xbox-one" title="Batman: Arkham Knight" year="23-06-2015" dt="Warner Bros. Interactive Entertainment" dv="Rocksteady Studios, Iron Galaxy Studios">
         <picture src="../img/batman_arkham_knight.jpg"/>
         <description>Batman: Arkham Knight para PS4 es un nuevo videojuego de Batman que cerrará la saga "Arkham" del personaje de DC Comics en los videojuegos. Desarrollado por los creadores de Arkham Asylum y Arkham City, el título tiene lugar un año después de los sucesos de éste, enfrentándose Batman de nuevo a un grupo de villanos, liderados por el misterioso Arkham Knight. Volveremos a contar con libertad para explorar Gotham, y esta vez podremos conducir el Batmóvil.</description>
+        <trophies>
+            <trophy title="¡Yo SOY Batman!" type="platinum">
+                <description>Reclama tu ciudad.</description>
+            </trophy>
+            <trophy title="Demonios de la calle" type="silver">
+                <description>Obtén 33 estrellas en los desafíos de RA usando el batmóvil de la película de 1989.</description>
+            </trophy>
+            <trophy title="Gangland Express" type="silver">
+                <description>Obtén 33 estrellas en los desafíos de RA usando el batmóvil acróbata de 2008.</description>
+            </trophy>
+            <trophy title="La Escena del Crimen" type="bronze">
+                <description>Rescata al primer rehén del Sombrerero Loco.</description>
+            </trophy>
+            <trophy title="Juegos Mentales" type="bronze">
+                <description>Rescata al segundo rehén del Sombrerero Loco.</description>
+            </trophy>
+        </trophies>
     </game>
 
-    <game type="nintendo-3ds" title="Pokemon Sol/Luna" year="23-11-2016">
-        <picture src="../img/pokemon_sol_luna.jpg"/>
-        <description>Pokémon Sol y Luna son dos videojuegos para las consolas de la familia de Nintendo 3DS, que inician la septima generación, situandose el juego en la región tropical de Alola.</description>
+    <game id="004" type="ps4 xbox-one pc" title="The Elder Scrolls V: Skyrim - Special Edition" year="28-10-2016" dt="Bethesda Softworks" dv="Bethesda Game Studios">
+        <picture src="../img/TESOV:Special_Edition.jpg"/>
+        <description>The Elder Scrolls V: Skyrim: Special Edition es una remasterización de The Elder Scrolls V cinco años después del lanzamiento del original y para la nueva generación de consolas. Cuenta con todo el contenido del juego de 2011, más los tres packs de contenido descargables lanzados, más soporte para mods. Además, sus gráficos han sido rehechos para la nueva generación.</description>
+        <trophies>
+            <trophy title="Trofeo de platino" type="platinum">
+                <description>Para ganar este trofeo, obten los otros 50 trofeos.</description>
+            </trophy>
+            <trophy title="Matadragones" type="gold">
+                <description>Completa "Matadragones".</description>
+            </trophy>
+            <trophy title="Explorador" type="silver">
+                <description>Explora 100 lugares.</description>
+            </trophy>
+            <trophy title="La gloria de los muertos" type="silver">
+                <description>Completa "La gloria de los muertos".</description>
+            </trophy>
+            <trophy title="Maestro de habilidad" type="silver">
+                <description>Consigue que una habilidad llegue a nivel 100.</description>
+            </trophy>
+            <trophy title="El ojo de Magnus" type="silver">
+                <description>Completa "El ojo de Magnus".</description>
+            </trophy>
+            <trophy title="Profundo" type="silver">
+                <description>Despeja 50 mazmorras.</description>
+            </trophy>
+            <trophy title="Menhires" type="silver">
+                <description>Encuentra los 13 menhires.</description>
+            </trophy>
+            <trophy title="Heroes de Skyrim" type="silver">
+                <description>Captura Soledad o Ventalia.</description>
+            </trophy>
+            <trophy title="¡Salve, Sithis!" type="silver">
+                <description>Completa "¡Salve, Sithis!".</description>
+            </trophy>
+        </trophies>
     </game>
+
+    <game id="005" type="ps4 xbox-one pc" title="Assassin's Creed Origins" year="27-10-2017" dt="Ubisoft" dv="Ubisoft">
+        <picture src="../img/assasins_creed_origins.jpg"/>
+        <description>Este nuevo título está ambientado en torno al año 49 a. C., con el reinado de Cleopatra VII, en el Antiguo Egipto​ dominado por la República Romana,​ ya que en el logo del videojuego aparece el Ojo de Horus,​ que coincide con el origen de la Hermandad de los Asesinos.​ El jugador toma el rol de un Medjay llamado Bayek que protege a la gente del Reino Ptolemaico en un tiempo de disturbios. El faraón, Ptolomeo XIII, lucha por mantener su poder al tiempo que ambiciona con expandirlo. Su hermana, la reciente depuesta Cleopatra, empieza a organizar un contra-golpe hacia él, y las frecuentes incursiones de la República Romana bajo el comando de Julio César llevan al temor de una invasión. El objetivo de Bayek como un Medjay es contactarse con las fuerzas secretas manipulando esos eventos y convirtiéndose en uno de los primeros asesinos.</description>
+        <trophies>
+            <trophy title="¡Consíguelos todos!" type="platinum">
+                <description>Consigue todos los trofeos.</description>
+            </trophy>
+            <trophy title="Fin" type="gold">
+                <description>Finaliza la última misión principal.</description>
+            </trophy>
+            <trophy title="El escarabajo" type="silver">
+                <description>Completa la misión "Las mentiras del escarabajo".</description>
+            </trophy>
+            <trophy title="El lagarto" type="silver">
+                <description>Completa la misión "El rostro del lagarto".</description>
+            </trophy>
+            <trophy title="El asedio" type="silver">
+                <description>Completa la misión "Las consecuencias".</description>
+            </trophy>
+            <trophy title="¡Despierta!" type="silver">
+                <description>Completa la secuencia onírica .</description>
+            </trophy>
+            <trophy title="Ya falta poco" type="silver">
+                <description>Completa la misión "El pesado final".</description>
+            </trophy>
+            <trophy title="Basta de enseñanzas" type="silver">
+                <description>Activa una habilidad de maestro.</description>
+            </trophy>
+            <trophy title="Morituti te salutant" type="silver">
+                <description>Por completar el  100% de eventos de arena de Krocodilopolis.</description>
+            </trophy>
+            <trophy title="¡Brutal!" type="silver">
+                <description>Por vencer a un jefe de la arena con ataque de sobrecarga.</description>
+            </trophy>
+        </trophies>
+    </game>
+
+    <game id="006" type="ps4 xbox-one pc" title="Dishonored 2" year="11-11-2016" dt="Bethesda Softworks" dv="Arkane Softworks">
+        <picture src="../img/dishonored2.jpg"/>
+        <description>Dishonored 2 se ambientará 15 años después de la plaga que azotó la ciudad Dunwall. Los protagonistas principales serán Corvo Attano, ex guardaespaldas y Emily Kaldwin, la hija de la emperatriz de Dunwall. La localización del juego será en Karnaca, una ciudad ficticia de Europa infestada por una nueva plaga trasmitida por insectos voladores.</description>
+        <trophies>
+            <trophy title="Los días de Dunwall y las noches de Karnaca" type="platinum">
+                <description>Consigue los demas trofeos.</description>
+            </trophy>
+            <trophy title="Sombra" type="gold">
+                <description>Completa el juego sin que te vean.</description>
+            </trophy>
+            <trophy title="Manos impolutas" type="gold">
+                <description>Completa el juego sin matar a nadie.</description>
+            </trophy>
+            <trophy title="La emperatriz" type="silver">
+                <description>Termina el juego con Emily Kaldwin</description>
+            </trophy>
+            <tropy title="Fantasmal" type="silver">
+                <description>Completa una mision sin que te vean</description>
+            </trophy>
+            <trophy title="Coleccionista de mecánica" type="silver">
+                <description>Obtén las placas numeradas de tres soldados mecánicas</description>
+            </thropy>
+            <trophy title="Sin escrúpulos" type="bronze">
+                <description>Elimina a 20 enemigos desprevenidos</description>
+            </trophy>
+            <trophy title="Antídoto" type="bronze">
+                <description>Habla con la doctora Hypatia a bordo del Dreadful Wale</description>
+            <trophy>
+            <trophy title="Robo mórbido" type="bronze">
+                <description>Roba un cadáver para Mindy Blanchard</description>
+            <trophy>
+            <trophy title="Enfoque alternativo" type="bronze">
+                <description>Completa una misión sin bajas</description>
+            <trophy>
+        </trophies>
+    </game>
+
+    <game id="007" type="ps4 xbox-one pc" title="Borderlands 3" year="13-09-2019" dt="2K Games" dv="Gearbox Software">
+    <picture src="../img/borderlands3.jpg"/>
+        <description>Siete años despues de la muerte de Jack el Guapo y la caída de Hyperion, los antagonistas del videojuego Troy y Tyreen Calypso se enteran de otras Cámaras más allá del planeta Pandora, y forman un culto violento llamado "Hijos de la cámara" para tomar posesión de ellos. Lilith, un personaje que hace aparición en los anteriores juegos de la saga, recluta a nuevos "busca camaras" para ayudar a detener a los gemelos Calypso. Muchos personajes de juegos anteriores de Borderlands regresarán, incluidos los del videojuego derivado Tales from the Borderlands</description>
+        <trophies>
+            <trophy title="Buscador definitivo" type="platinum">
+                <description>Desbloquea todos los trofeos de Borderlands 3.</description>
+            </trophy>
+            <trophy title="El más cabronazo de las tierras fronterizas" type="gold">
+                <description>Llega al nivel 50.</description>
+            </trophy>
+            <trophy title="De Cámara a Cámara y tiro porque me toca" type="silver">
+                <description>Llega al nivel 25.</description>
+            </trophy>
+            <trophy title="Hasta las estrellas" type="bronze">
+                <description>Llega al nivel 10.</description>
+            </trophy>
+            <trophy title="Eres hábil" type="bronze">
+                <description>Alcanza el nivel 2.</description>
+            </trophy>
+        </trophies>
+    </game>
+
 </colection>
