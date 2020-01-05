@@ -134,3 +134,11 @@ body {
     border: 1px solid #404040;
     border-radius: 50%;
 }
+
+#no-logged {
+
+}
+
+#logged {
+    display:none;
+}
