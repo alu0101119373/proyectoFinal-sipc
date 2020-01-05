@@ -56,6 +56,10 @@ body {
     padding-top: 0;
 }
 
+.pd10 {
+    padding: 10px;
+}
+
 .col,
 [class*="col-"] {
     padding-right: 0;
@@ -133,6 +137,15 @@ body {
     margin-right: 5px;
     border: 1px solid #404040;
     border-radius: 50%;
+}
+
+.game-image {
+    height: 377px;
+    width: 271px;
+}
+
+.game-image:hover {
+    border: 2px solid #FD6721;
 }
 
 #no-logged {
