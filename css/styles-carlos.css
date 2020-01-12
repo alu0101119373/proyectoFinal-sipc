@@ -31,7 +31,6 @@ body {
 }
 
 .no-a {
-    font-size: 28px;
     font-family: 'Mclaren';
     color: #FD6721;
 }
@@ -62,10 +61,6 @@ body {
     padding-right: 0;
     padding-bottom: 0;
     padding-top: 0;
-}
-
-.pd10 {
-    padding: 10px;
 }
 
 .col,
@@ -153,7 +148,6 @@ body {
 
 .tam_noticias {
     width: 100%px;
-    border: 1px solid #000000;
 }
 
 .text_noti {
@@ -164,11 +158,6 @@ body {
 .img_not {
     width: 100%;
     margin-top: 5px;
-    border: 1px solid #000000;
-}
-
-.img_not:hover {
-    border: 2px solid #FD6721;
 }
 
 .tam_note {
@@ -176,73 +165,15 @@ body {
 }
 
 .margin_col {
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 40px;
     margin-right: 20px;
 }
 
 .div_noticias {
     width: 602px;
-    height: 513px;
 }
 
 .div_note {
     width: 474px
-}
-
-.note {
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-}
-
-.note:hover {
-    background-color: #104557;
-}
-
-.note_text {
-    color: #333333;
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.note_text:hover {
-    color: #FFFFFF;
-}
-
-.note-top {
-    margin-top: 5px;
-}
-
-.row_not {
-    margin-bottom: 30px;
-}
-
-.game-image {
-    height: 377px;
-    width: 271px;
-}
-
-.game-image:hover {
-    border: 2px solid #FD6721;
-}
-
-.div_body {
-    width: 1123px;
-}
-
-.row_bodytext {
-    margin-bottom: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-#no-logged {}
-
-#logged {
-    display: none;
 }
