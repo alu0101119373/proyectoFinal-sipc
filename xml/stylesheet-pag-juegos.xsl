@@ -8,7 +8,12 @@
             <div class="container no-gutters no-padding row">
                 <xsl:for-each select="colection/game">
                     <div class="m-1">
-                        <a href="#">
+                        <a>
+                            <xsl:attribute name="href">
+                                <xsl:text>info-juego-</xsl:text>
+                                <xsl:value-of select="@id"/>
+                                <xsl:text>.html</xsl:text>
+                            </xsl:attribute>
                             <img class="game-image">
                                 <xsl:attribute name="src">
                                     <xsl:value-of select="picture/@src"/>
