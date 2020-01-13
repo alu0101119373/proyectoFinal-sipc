@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <xsl:for-each select="colection/game">
-            <xsl:if test="@id = 0">
+            <xsl:if test="@id = 1">
                 <div class="container-fluid row justify-content-center no-gutters no-padding mb-5">
                     <div class="container no-gutters no-padding row justify-content-center p-3 pb-4">
                         <h2><xsl:value-of select="@title"/></h2>
@@ -71,8 +71,8 @@
 
                 <!-- Ejecutamos la lectura de la base de datos de firebase -->
                 <script>
-                    get_valorations('valoraciones_juegos',0);
-                    get_trophies(0);
+                    get_valorations('valoraciones_juegos',1);
+                    get_trophies(1);
                 </script>
             </xsl:if>
         </xsl:for-each>

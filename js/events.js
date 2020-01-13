@@ -25,8 +25,9 @@ var valoracion_total = document.getElementById('valoraciones-totales');
 lista_trofeos.innerHTML = '';
 
 // Obtenemos las valoraciones
-function get_valorations (id) {
-    db.ref('valoraciones_juegos/').once('value', snap => {
+function get_valorations (data, id) {
+    database = data + '/';
+    db.ref(database).once('value', snap => {
         // Obtenemos los datos
         var pos = 0;
         var neg = 0;
