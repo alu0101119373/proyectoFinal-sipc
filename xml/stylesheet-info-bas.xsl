@@ -18,20 +18,20 @@
                             </div>
                             <div class="col-6 pt-5">
                                 <h3>SINOPSIS</h3>
-                                <p>
+                                <p class="text-justify">
                                     <xsl:value-of select="description"/>
                                 </p>
                             </div>
                         </div>
                         <div class="container row justify-content-between">
-                            <div class="container-fluid no-gutters no-padding p-3 col-6">
-                                <p class="game-info-size no-gutters"><span class="game-info">Lanzamiento: </span> <xsl:value-of select="@year"/></p>
+                            <div class="container-fluid no-gutters no-padding p-3 pr-5 col-6">
+                                <p class="game-info-size no-gutters text-justify"><span class="game-info">Lanzamiento: </span> <xsl:value-of select="@year"/></p>
                                 <br/>
-                                <p class="game-info-size no-gutters"><span class="game-info">Plataforma: </span> <xsl:value-of select="@type"/></p>
+                                <p class="game-info-size no-gutters text-justify"><span class="game-info">Plataforma: </span> <xsl:value-of select="@type"/></p>
                                 <br/>
-                                <p class="game-info-size no-gutters"><span class="game-info">Desarrollador: </span> <xsl:value-of select="@dv"/></p>
+                                <p class="game-info-size no-gutters text-justify"><span class="game-info">Desarrollador: </span> <xsl:value-of select="@dv"/></p>
                                 <br/>
-                                <p class="game-info-size no-gutters"><span class="game-info">Distribuidor: </span> <xsl:value-of select="@dt"/></p>
+                                <p class="game-info-size no-gutters text-justify"><span class="game-info">Distribuidor: </span> <xsl:value-of select="@dt"/></p>
                             </div>
                             <div class="container-fluid col-6">
                                 <table class="table">

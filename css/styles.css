@@ -4,7 +4,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+th {
     font-family: 'McLaren';
 }
 
@@ -139,6 +140,14 @@ body {
     border-radius: 50%;
 }
 
+.game-info-size {
+    font-size: 21px;
+}
+
+.game-info {
+    color: #FD6721;
+}
+
 .game-image {
     height: 377px;
     width: 271px;
@@ -146,6 +155,45 @@ body {
 
 .game-image:hover {
     border: 2px solid #FD6721;
+}
+
+.trofeo {
+    height: 104px;
+    width: 1022px;
+    border: 1px solid #666666;
+    color: #333333;
+}
+
+.trofeo-ico {
+    margin: 10px;
+    background-color: white;
+    width:84px; height:84px;
+}
+
+.trofeo-titulo {
+    padding: 10px;
+    border-right: 3px solid #404040;
+    font-size: 24px;
+}
+
+.trofeo-descripcion {
+    font-size: 19px;
+}
+
+.trofeo-platino {
+    background-color: #4DC2DB;
+}
+
+.trofeo-bronce {
+    background-color: #C97B47;
+}
+
+.trofeo-plata {
+    background-color: #CCCCCC;
+}
+
+.trofeo-oro {
+    background-color: #EFB810;
 }
 
 #no-logged {

@@ -75,6 +75,7 @@
                     </div>
                 </div>
                 <div class="container-fluid no-padding">
+                    </li>
                     <nav class="navbar navbar-style navbar-expand-lg nav-justified container-fluid no-padding nav-justified">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -104,38 +105,8 @@
         </header>
 
         <!-- Contenido de la pagina -->
-        
-        <div class="container-fluid row justify-content-center no-gutters no-padding mb-5">
-            <div class="container no-gutters no-padding row justify-content-center p-3">
-                <h2>¡Estos son los juegos que tenemos a tú disposición!</h2>
-            </div>
-        <div class="container no-gutters no-padding row">
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/batman_arkham_asylum.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/batman_arkham_city.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/batman_arkham_origins.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/batman_arkham_knight.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/tes5_skyrim.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/assassins_creed_origins.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/dishonored_2.jpg"/></a>
-            </div>
-            <div class="m-1">
-                <a href="#"><img class="game-image" src="img/borderlands_3.jpg"/></a>
-            </div>
-        </div>
-    </div>
+        <div class="container-fluid row justify-content-center no-gutters no-padding mb-5"><div class="container no-gutters no-padding row justify-content-center p-3 pb-4"><h2>Batman: Arkham Asylum</h2></div><div class="container no-gutters no-padding"><div class="container-fluid row justify-content-around"><div class="col-6 row justify-content-center"><img style="border: 1px solid #333333" src="img/batman_arkham_asylum.jpg"/></div><div class="col-6 pt-5"><h3>SINOPSIS</h3><p class="text-justify">La historia de Arkham Asylum se basa en la saga de Mythos, donde El Joker ha elaborado un plan para liberar a los mayores enemigos de Batman que se encuentran encerrados en el manicomio de Arkham. Batman investiga sobre el caso y descubre que lo que quiere el Joker es una toxina de superesteroides llamada «Títan» y usarla para crear un ejército de monstruos que destruya Gotham City.</p></div></div><div class="container row justify-content-between"><div class="container-fluid no-gutters no-padding p-3 col-6"><p class="game-info-size no-gutters text-justify"><span class="game-info">Lanzamiento: </span>28-08-29</p><br/><p class="game-info-size no-gutters text-justify"><span class="game-info">Plataforma: </span>Playstation 3, XBOX-360</p><br/><p class="game-info-size no-gutters text-justify"><span class="game-info">Desarrollador: </span>Rocksteady Studios, Feral Interactive, Virtuos</p><br/><p class="game-info-size no-gutters text-justify"><span class="game-info">Distribuidor: </span>Eidos interactive, Warner Bros. Interactive enterteinment, Square Enix, Feral Interactive</p></div><div class="container-fluid col-6"><table class="table"><thead style="background-color: #022F3D;"><tr class="border border-dark"><th class="text-center" style="color: white; font-size: 19px;" scope="col" colspan="2">Análisis de los usuarios</th></tr></thead><tbody><tr><td class="border border-dark"><p id="porc-positivos" class="text-center no-gutters" style="font-size: 32px; color:#55CF56;">V</p><br/><p class="text-center" style="font-size: 21px;">positivos</p></td><td class="border border-dark"><p id="porc-negativos" class="text-center no-gutters" style="font-size: 32px; color:#E82611;">V</p><br/><p class="text-center" style="font-size: 21px;">negativos</p></td></tr></tbody></table><div class="container"><p id="valoraciones-totales" style="font-size: 18px;">V</p></div></div></div><div class="container no-gutters no-padding row p-4 mt-2"><div class="col pb-4"><h2 class="float-left">INFORMACIÓN SOBRE LOS TROFEOS</h2></div><div id="lista-trofeos" class="container row">V</div></div></div></div>
+
 
         <footer class="footer">
             <div class="row container-fluid no-gutters no-padding justify-content-around">
@@ -183,22 +154,13 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="js/events.js"></script>
 
+    <!-- Ejecutamos la lectura de la base de datos de firebase -->
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyD370dYi_BY6atxgza1OmIDSOXUoQRLxBE",
-        authDomain: "trophie-games.firebaseapp.com",
-        databaseURL: "https://trophie-games.firebaseio.com",
-        projectId: "trophie-games",
-        storageBucket: "trophie-games.appspot.com",
-        messagingSenderId: "286202581827",
-        appId: "1:286202581827:web:9898ef8d74a4caac9e55f6",
-        measurementId: "G-GMV55YLF8P"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+        get_valorations(0);
+        get_trophies(0);
     </script>
 
 </body>
