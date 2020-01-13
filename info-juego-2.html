@@ -89,7 +89,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav container-fluid justify-content-around no-padding">
                                 <li class="nav-item">
-                                    <a class="nav-link navbar-a" href="#">Inicio <span
+                                    <a class="nav-link navbar-a" href="index.html">Inicio <span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
@@ -111,54 +111,57 @@
             </div>
         </header>
 
-        <!-- Contenido de la pagina -->
+        <!-- Aqui va el codigo de la pagina -->
         <div class="container-fluid row justify-content-center no-gutters no-padding mb-5">
             <div class="container no-gutters no-padding row justify-content-center p-3 pb-4">
-                <h2>Batman: Arkham Asylum</h2>
+                <h2>Batman: Arkham Origins</h2>
             </div>
             <div class="container no-gutters no-padding">
                 <div class="container-fluid row justify-content-around">
                     <div class="col-6 row justify-content-center"><img style="border: 1px solid #333333"
-                            src="img/batman_arkham_asylum.jpg" /></div>
+                            src="img/batman_arkham_origins.jpg" /></div>
                     <div class="col-6 pt-5">
                         <h3>SINOPSIS</h3>
-                        <p class="text-justify">La historia de Arkham Asylum se basa en la saga de Mythos, donde El
-                            Joker ha elaborado un plan para liberar a los mayores enemigos de Batman que se encuentran
-                            encerrados en el manicomio de Arkham. Batman investiga sobre el caso y descubre que lo que
-                            quiere el Joker es una toxina de superesteroides llamada «Títan» y usarla para crear un
-                            ejército de monstruos que destruya Gotham City.</p>
+                        <p class="text-justify">Tras dos años de descanso, Batman vuelve para contarnos cómo fueron sus
+                            orígenes, en una nueva y apasionante aventura que sigue a pies juntillas la línea trazada en
+                            Arkham
+                            City, pero ahora bajo la batuta de otro estudio desarrollador.</p>
                     </div>
                 </div>
                 <div class="container row justify-content-between">
                     <div class="container-fluid no-gutters no-padding p-3 pr-5 col-6">
                         <p class="game-info-size no-gutters text-justify"><span class="game-info">Lanzamiento:
-                            </span>28-08-29</p><br />
+                            </span>25-10-2015
+                        </p><br />
                         <p class="game-info-size no-gutters text-justify"><span class="game-info">Plataforma:
-                            </span>Playstation 3, XBOX-360</p><br />
+                            </span>Playstation
+                            3, XBOX-360</p><br />
                         <p class="game-info-size no-gutters text-justify"><span class="game-info">Desarrollador:
-                            </span>Rocksteady Studios, Feral Interactive, Virtuos</p><br />
+                            </span>Warner
+                            Bros Games Montreal, Iron Galaxy Studios, Human Head Studios</p><br />
                         <p class="game-info-size no-gutters text-justify"><span class="game-info">Distribuidor:
-                            </span>Eidos interactive, Warner Bros. Interactive enterteinment, Square Enix, Feral
-                            Interactive</p>
+                            </span>Warner
+                            Bros. Interactive Entertainment</p>
                     </div>
                     <div class="container-fluid col-6">
                         <table class="table">
                             <thead style="background-color: #022F3D;">
                                 <tr class="border border-dark">
                                     <th class="text-center" style="color: white; font-size: 19px;" scope="col"
-                                        colspan="2">Análisis de los usuarios</th>
+                                        colspan="2">
+                                        Análisis de los usuarios</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="border border-dark">
                                         <p id="porc-positivos" class="text-center no-gutters"
-                                            style="font-size: 32px; color:#55CF56;">V</p><br />
+                                            style="font-size: 32px; color:#55CF56;"></p><br />
                                         <p class="text-center" style="font-size: 21px;">positivos</p>
                                     </td>
                                     <td class="border border-dark">
                                         <p id="porc-negativos" class="text-center no-gutters"
-                                            style="font-size: 32px; color:#E82611;">V</p><br />
+                                            style="font-size: 32px; color:#E82611;"></p><br />
                                         <p class="text-center" style="font-size: 21px;">negativos</p>
                                     </td>
                                 </tr>
@@ -173,11 +176,10 @@
                     <div class="col pb-4">
                         <h2 class="float-left">INFORMACIÓN SOBRE LOS TROFEOS</h2>
                     </div>
-                    <div id="lista-trofeos" class="container row">V</div>
+                    <div id="lista-trofeos" class="container row"></div>
                 </div>
             </div>
         </div>
-
 
         <footer class="footer">
             <div class="row container-fluid no-gutters no-padding justify-content-around">
@@ -231,12 +233,12 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
     <script src="js/events.js"></script>
 
-    <!-- Ejecutamos la lectura de la base de datos de firebase -->
     <script>
-        get_valorations('valoraciones_juegos', 0);
-        get_trophies(0);
+        get_valorations('valoraciones_juegos', 2);
+        get_trophies(2);
     </script>
 
 </body>

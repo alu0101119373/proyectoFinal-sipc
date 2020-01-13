@@ -63,7 +63,7 @@ function get_valorations (data, id) {
 function get_trophies (id) {
     db.ref('trofeos/').once('value', snap => {
         let valores = snap.val();
-        for (trofeo of valores.reverse()) {
+        for (trofeo of valores) {
             if (trofeo.id_juego == id) {
                 if (trofeo.tipo == '0') {
                     lista_trofeos.innerHTML += `
