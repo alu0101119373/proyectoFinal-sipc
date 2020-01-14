@@ -40,6 +40,14 @@ body {
     margin-bottom: 70px;
 }
 
+#signin-page {
+    background: white;
+    width: 600px;
+    height: 1054px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .no-a {
     font-size: 28px;
     font-family: 'Mclaren';
