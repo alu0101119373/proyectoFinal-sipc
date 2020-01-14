@@ -295,6 +295,65 @@ body {
     margin-bottom: 30px;
 }
 
+.body-analisis {
+    background-color: #104557;
+    height: 190px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-analisis {
+    margin-top: 50px;
+}
+
+.img-analisis {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.link-container {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.linktext-analisis {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.paginas-analisis {
+    font-size: 16px;
+    color: #333333;
+}
+
+.box-analisis {
+    background-color: #6ACA25;
+    margin-top: 10px;
+    width: 142px;
+    height: 23px;
+}
+
+.valoraciones {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.valoraciones-analisis {
+    font-size: 24px;
+}
+
+.valoracionesp-analisis {
+    color: #55CF56;
+}
+
+.valoracionesn-analisis {
+    color: #E82611;
+}
+
 #no-logged {}
 
 #logged {
