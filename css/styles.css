@@ -148,7 +148,6 @@ body {
     border-radius: 50%;
 }
 
-
 .game-info-size {
     font-size: 21px;
 }
@@ -251,7 +250,8 @@ body {
 .trofeo-ico {
     margin: 10px;
     background-color: white;
-    width:84px; height:84px;
+    width: 84px;
+    height: 84px;
 }
 
 .trofeo-titulo {
@@ -288,6 +288,11 @@ body {
     margin-bottom: 30px;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.titulo-analisis {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #no-logged {}
