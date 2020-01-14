@@ -5,7 +5,8 @@ h4,
 h5,
 h6,
 p,
-th {
+th,
+label {
     font-family: 'McLaren';
 }
 
@@ -29,6 +30,14 @@ body {
 #background-page {
     background: white;
     width: 1200px;
+}
+
+#login-page {
+    background: white;
+    width: 613px;
+    height: 771px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .no-a {
@@ -290,8 +299,20 @@ body {
     margin-right: 40px;
 }
 
-#no-logged {}
+.form-label {
+    color: #FD6721;
+    font-size: 29px;
+}
 
-#logged {
+.hide-object {
     display: none;
+}
+
+.enlace-form {
+    color: #FD6721;
+    text-decoration: underline;
+}
+
+.enlace-form:hover {
+    color: #CF4C0E;
 }
