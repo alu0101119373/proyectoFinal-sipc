@@ -1,19 +1,3 @@
-// Cargamos la base de datos
-var firebaseConfig = {
-    apiKey: "AIzaSyD370dYi_BY6atxgza1OmIDSOXUoQRLxBE",
-    authDomain: "trophie-games.firebaseapp.com",
-    databaseURL: "https://trophie-games.firebaseio.com",
-    projectId: "trophie-games",
-    storageBucket: "trophie-games.appspot.com",
-    messagingSenderId: "286202581827",
-    appId: "1:286202581827:web:9898ef8d74a4caac9e55f6",
-    measurementId: "G-GMV55YLF8P"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-
 var GoogleProvider = new firebase.auth.GoogleAuthProvider();
 
 // GoogleProvider.addScope('https:://www.googleapis.com/auth/plus.login');
@@ -22,13 +6,6 @@ var db = firebase.database();
 
 // Recogemos los campos del formulario
 var inputs = document.querySelectorAll('form#form-registro > div > input');
-// var usuario = document.getElementById('user');
-// var passwd = document.getElementById('passwd');
-// var cpasswd = document.getElementById('cpasswd');
-// var email = document.getElementById('email');
-// var cemail = document.getElementById('cemail');
-// var fecha_nacimiento = document.getElementById('nacimiento');
-// var mensaje_personal = document.getElementById('mensaje');
 
 var submitForm = document.getElementById('submit');
 var googleSubmit = document.getElementById('google-register');
@@ -37,44 +14,18 @@ var googleUser;
 
 // Validamos cuando el usuario deja de hacer focus (blur) de algun campo del formulario
 for (input of inputs) {
-    console.log(input);
     input.addEventListener('blur', event => {
-        validateUsername();
-        validatePassword();
-        validateConfirmPassword();
-        validateEmail();
-        validateConfirmEmail();
-        validatePersonalMessage();
+        validateAll();
     });
 }
 
-// usuario.addEventListener('blur', event => {
-//     validateUsername(event);
-// });
-
-// passwd.addEventListener('blur', event => {
-//     validatePassword(event);
-// });
-
-// cpasswd.addEventListener('blur', event => {
-//     validateConfirmPassword(event);
-// });
-
-// email.addEventListener('blur', event => {
-//     validateEmail(event);
-// });
-
-// nacimiento.addEventListener('blur', event => {
-//     // El propio campo se verifica
-// });
-
-// mensaje.addEventListener('blur', event => {
-//     validatePersonalMessage(event);
-// });
-
 // Iniciando registro por usuario y contraseña
 submitForm.addEventListener('click', event => {
-    console.log("Enviando registro...");
+
+    if (!validateAll()) {
+        alert('Todos los campos deben estar rellenados y los datos introducidos deben ser válidos');
+        return;
+    }
 
     // Damos de alta al usuario en el registro
     let error = false;
@@ -85,8 +36,10 @@ submitForm.addEventListener('click', event => {
         console.log(errorCode + ': ' + errorMessage);
     });
 
-    if (!error)
-        registerUserData(usuario.value, email.value, nacimiento.value, mensaje.value);
+    if (!error) {
+        registerUserData($('#user').val(), $('#email').val(), $('#nacimiento').val(), $('#mensaje').val());
+        window.location = 'index.html';
+    }
 });
 
 // funciones para autenticacion
@@ -112,6 +65,9 @@ googleSubmit.addEventListener('click', event => {
         console.log(googleUser);
 
         registerUserData(googleUser.displayName, googleUser.email, '','');
+
+        window.location = 'index.html';
+
     }).catch(error => {
         let errorCode = error.code;
         let errorMessage = error.message;
@@ -122,12 +78,16 @@ googleSubmit.addEventListener('click', event => {
 });
 
 // Funciones de validacion de campos
+function validateAll () {
+    
+    return validateUsername() && validatePassword() && validateConfirmPassword() && validateEmail() && validateConfirmEmail() && validatePersonalMessage();
+}
+
 function validateUsername () {
     let usuario = $('#user');
     if (usuario.val() == '') {
-        console.log("Campos username vacio");
         usuario.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        return false;
     }
 
     // Leemos de la base de datos de firebase
@@ -140,59 +100,61 @@ function validateUsername () {
             }
         }
         if (found) {
-            console.log("Ya está registrado");
             usuario.removeClass('valid-form').addClass('invalid-form');
         } else {
-            console.log("NO está registrado");
             usuario.removeClass('invalid-form').addClass('valid-form');
         }
     });
+    return usuario.hasClass('valid-form');
 }
 
 function validatePassword () {
     let password =  $("#passwd");
     if (password.val() == '') {
-        console.log("Campos password vacio");
         password.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        return false;
     }
 
     if (password.val().length < 8) {
         password.removeClass('valid-form').addClass('invalid-form');
+        return false;
     } else {
         password.removeClass('invalid-form').addClass('valid-form');
+        return true;
     }
 }
 
 function validateConfirmPassword () {
     let cpassword =  $("#cpasswd");
     if (cpassword.val() == '') {
-        console.log("Campos confirm password vacio");
         cpassword.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        return false;
     }
 
     if ($("#passwd").hasClass('valid-form') && $("#passwd").val() == cpassword.val()) {
         cpassword.removeClass('invalid-form').addClass('valid-form');
+        return true;
     } else {
         cpassword.removeClass('valid-form').addClass('invalid-form');
+        return false;
     }
 }
 
 function validateEmail () {
     let email = $("#email");
     if (email.val() == '') {
-        console.log("Campos email vacio");
         email.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        return false;
     }
 
     let mail = email.val();
     if (mail.includes('@') && mail.includes('.', mail.indexOf('@'))) {
         if (mail.substring(0, mail.indexOf('@')).length > 2 && mail.substring(mail.indexOf('@')+1, mail.indexOf('.')).length > 2 && mail.substring(mail.indexOf('.')+1).length >= 2) {
             email.removeClass('invalid-form').addClass('valid-form');
+            return true;
         } else {
             email.removeClass('valid-form').addClass('invalid-form');
+            return false;
         }
     }
 }
@@ -202,29 +164,31 @@ function validateConfirmEmail () {
     let cemail = $('#cemail');
 
     if (cemail.val() == '') {
-        console.log("Campos confirm email vacio");
-        email.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        cemail.removeClass('valid-form').removeClass('invalid-form');
+        return false;
     }
 
     if ($('#email').hasClass('valid-form') && cemail.val() == $('#email').val()) {
-        email.removeClass('invalid-form').addClass('valid-form');
+        cemail.removeClass('invalid-form').addClass('valid-form');
+        return true;
     } else {
-        email.removeClass('valid-form').addClass('invalid-form');
+        cemail.removeClass('valid-form').addClass('invalid-form');
+        return false;
     }
 }
 
 function validatePersonalMessage () {
     let mensajePersonal = $("#mensaje");
     if (mensajePersonal.val() == '') {
-        console.log("Campo mensaje personal vacio");
         mensajePersonal.removeClass('valid-form').removeClass('invalid-form');
-        return;
+        return false;
     }
 
     if (mensajePersonal.val().length > 60) {
         mensajePersonal.removeClass('valid-form').addClass('invalid-form');
+        return false;
     } else {
         mensajePersonal.removeClass('invalid-form').addClass('valid-form');
+        return true;
     }
 }
