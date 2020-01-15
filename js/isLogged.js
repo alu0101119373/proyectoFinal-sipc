@@ -12,6 +12,7 @@ firebase.auth().onAuthStateChanged( user => {
                 if (userData.email == user.email) {
                     $('#logged-name').text(userData.nombre);
                     $('#logged-img').attr('src', userData.imagen);
+                    return;
                 }
             }
         });

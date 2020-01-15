@@ -30,13 +30,13 @@
                         <div class="col-7">
                             <img src="img/logo-trophiegames.png" alt="Responsive image" class="logo">
                         </div>
-                        <div id="no-logged" class="row">
+                        <div id="no-logged" class="row hide-object">
                             <div class="row align-items-center mx-3">
                                 <div class="col-2">
                                     <img src="img/signup.png" width="25px" height="25px" alt="Responsive image">
                                 </div>
                                 <div class="col-3 div-sesion">
-                                    <a href="" class="no-a">Registrarse</a>
+                                    <a href="signin.html" class="no-a">Registrarse</a>
 
                                 </div>
                             </div>
@@ -45,22 +45,20 @@
                                     <img src="img/login.png" width="25px" height="25px" alt="Responsive image">
                                 </div>
                                 <div class="col-3 div-sesion">
-                                    <a href="" class="no-a">Iniciar&nbsp;sesion</a>
+                                    <a href="login.html" class="no-a">Iniciar&nbsp;sesion</a>
                                 </div>
                             </div>
                         </div>
-                        <div id="logged" class="row align-items-center mx-3 ">
+                        <div id="logged" class="row align-items-center mx-3 hide-object">
                             <div class="col-3 mr-3">
-                                <img src="img/login_icon.png" class="login_icon">
+                                <img id="logged-img" src="" class="login_icon">
                             </div>
                             <div class="col-3">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                                      Marcus
-                                    </button>
+                                    <button id="logged-name" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"></button>
                                     <div class="dropdown-menu dropdown-menu-lg-right">
                                         <button class="dropdown-item" type="button">Perfil</button>
-                                        <button class="dropdown-item" type="button">Cerrar sesión</button>
+                                        <button id="close-session" class="dropdown-item" type="button">Cerrar sesión</button>
                                     </div>
                                 </div>
                             </div>
@@ -155,8 +153,11 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 
     <script src="js/firebase.js"></script>
+    <script src="js/isLogged.js"></script>
+    
     <script src="js/analisis.js"></script>
 
 </body>
