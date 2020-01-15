@@ -31,10 +31,16 @@
             </div>
 
             <div class="container-fluid">
+                <div id="error-container" class="container p-2 no-gutters mb-3 row align-items-start hide-object" style="background-color: rgba(255, 0, 0, 0.1); border: 1px solid red;">
+                    <div class="container col-1">
+                        <img src="https://img.icons8.com/android/24/000000/info.png" class="m-2" style="height: 15px; width: 15px;">
+                    </div>
+                    <p class="text-justify no-padding no-gutters col-11 align-self-center">Error desconocido</p>
+                </div>
                 <form action="">
                     <div class="form-group pb-3">
-                        <label for="user" class="form-label">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="user">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email">
                     </div>
                     <div class="form-group pt-3">
                         <label for="passwd" class="form-label">Contraseña</label>
@@ -45,10 +51,17 @@
             </div>
 
             <div class="container-fluid row justify-content-center">
-                <button type="button" class="btn btn-primary btn-lg">Iniciar sesión</button>
+                <button id="submit" type="submit" class="btn btn-primary btn-lg">Iniciar sesión</button>
             </div>
 
-            <p><a href="#" class="enlace-form">¿No tienes una cuenta? ¡Regístrate!</a></p>
+            <p><a href="signin.html" class="enlace-form">¿No tienes una cuenta? ¡Regístrate!</a></p>
+
+            <div class="container row justify-content-center">
+                <div style="cursor: pointer;">
+                    <img id="google-register" src="https://img.icons8.com/color/48/000000/google-logo.png" class="register-icon">
+                </div>
+                <img src="https://img.icons8.com/color/48/000000/twitter.png" class="register-icon hide-object">
+            </div>
 
         </div>
     </div>
@@ -66,8 +79,10 @@
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 
-    <!-- <script src="js/events.js"></script> -->
+
+    <script src="js/login.js"></script>
 
 </body>
 
