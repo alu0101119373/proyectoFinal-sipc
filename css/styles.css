@@ -74,6 +74,8 @@ img {
 @media only screen and (max-width: 768px) {
     #background-page {
         min-width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -84,6 +86,11 @@ img {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+@media (max-width: 768px) {
+    #login-page {
+        margin: 0;
+    }
+}
 
 #signin-page {
     background: white;
@@ -91,6 +98,11 @@ img {
     height: 1054px;
     margin-top: 70px;
     margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+    #signin-page {
+        margin: 0;
+    }
 }
 
 .no-a {
@@ -461,9 +473,21 @@ img {
     margin-left: 20px;
     margin-right: 10px;
 }
+@media (max-width:768px) {
+    .img-analisis {
+        display: none;
+        /* width: 7rem;
+        height: 7rem; */
+    }
+}
 
 .link-container {
     border-bottom: 3px solid #FFFFFF;
+}
+@media (max-width:768px) {
+    .link-container {
+        border-bottom: 0px;
+    }
 }
 
 .linktext-analisis {
@@ -472,10 +496,23 @@ img {
     margin-bottom: 20px;
     color: #FFFFFF;
 }
+@media (max-width:768px) {
+    .linktext-analisis {
+        font-size: 3.5vw;
+        padding: 15px 7px;
+        margin: 0px;
+        text-align: center;
+    }
+}
 
-.paginas-analisis {
+.pagina-analisis {
     font-size: 16px;
     color: #333333;
+}
+@media (max-width: 768px) {
+    .pagina-analisis {
+        font-size: 4vw;
+    }
 }
 
 .box-analisis {
@@ -484,14 +521,34 @@ img {
     width: 142px;
     height: 23px;
 }
+@media (max-width:768px) {
+    .box-analisis {
+        font-size: 5vw;
+        width: 7rem;
+        height: 2rem;
+    }
+}
 
 .valoraciones {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+@media (max-width:768px) {
+    .valoraciones {
+        margin:0px;
+    }
+}
 
 .valoraciones-analisis {
     font-size: 24px;
+}
+@media (max-width: 768px) {
+    .valoraciones-analisis {
+        font-size: 5vw;
+    }
+    .hide-analisis-valorations {
+        display: none;
+    }
 }
 
 .valoracionesp-analisis {

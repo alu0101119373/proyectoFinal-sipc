@@ -32,12 +32,12 @@
         <description>Este nuevo título está ambientado en torno al año 49 a. C., con el reinado de Cleopatra VII, en el Antiguo Egipto​ dominado por la República Romana,​ ya que en el logo del videojuego aparece el Ojo de Horus,​ que coincide con el origen de la Hermandad de los Asesinos.​ El jugador toma el rol de un Medjay llamado Bayek que protege a la gente del Reino Ptolemaico en un tiempo de disturbios. El faraón, Ptolomeo XIII, lucha por mantener su poder al tiempo que ambiciona con expandirlo. Su hermana, la reciente depuesta Cleopatra, empieza a organizar un contra-golpe hacia él, y las frecuentes incursiones de la República Romana bajo el comando de Julio César llevan al temor de una invasión. El objetivo de Bayek como un Medjay es contactarse con las fuerzas secretas manipulando esos eventos y convirtiéndose en uno de los primeros asesinos.</description>
     </game>
 
-    <game id="6" type="ps4 xbox-one pc" title="Dishonored 2" year="11-11-2016" dt="Bethesda Softworks" dv="Arkane Softworks">
+    <game id="6" type="Playstation 4, XBOX ONE, PC" title="Dishonored 2" year="11-11-2016" dt="Bethesda Softworks" dv="Arkane Softworks">
         <picture src="img/dishonored_2.jpg"/>
         <description>Dishonored 2 se ambientará 15 años después de la plaga que azotó la ciudad Dunwall. Los protagonistas principales serán Corvo Attano, ex guardaespaldas y Emily Kaldwin, la hija de la emperatriz de Dunwall. La localización del juego será en Karnaca, una ciudad ficticia de Europa infestada por una nueva plaga trasmitida por insectos voladores.</description>
     </game>
 
-    <game id="7" type="ps4 xbox-one pc" title="Borderlands 3" year="13-09-2019" dt="2K Games" dv="Gearbox Software">
+    <game id="7" type="Playstation 4, XBOX ONE, PC" title="Borderlands 3" year="13-09-2019" dt="2K Games" dv="Gearbox Software">
     <picture src="img/borderlands_3.jpg"/>
         <description>Siete años despues de la muerte de Jack el Guapo y la caída de Hyperion, los antagonistas del videojuego Troy y Tyreen Calypso se enteran de otras Cámaras más allá del planeta Pandora, y forman un culto violento llamado "Hijos de la cámara" para tomar posesión de ellos. Lilith, un personaje que hace aparición en los anteriores juegos de la saga, recluta a nuevos "busca camaras" para ayudar a detener a los gemelos Calypso. Muchos personajes de juegos anteriores de Borderlands regresarán, incluidos los del videojuego derivado Tales from the Borderlands</description>
     </game>
