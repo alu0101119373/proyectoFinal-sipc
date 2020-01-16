@@ -360,10 +360,14 @@ img {
 }
 
 .trofeo {
-    height: 104px;
     width: 1022px;
     border: 1px solid #666666;
     color: #333333;
+}
+@media (min-width:768px) {
+    .trofeo {
+        height: 104px;        
+    }
 }
 
 .trofeo-ico {
@@ -372,15 +376,34 @@ img {
     width: 84px;
     height: 84px;
 }
+@media (max-width:900px) {
+    .trofeo-ico {
+        display: none;
+    }
+}
 
 .trofeo-titulo {
     padding: 10px;
     border-right: 3px solid #404040;
     font-size: 19px;
 }
+@media (max-width:768px) {
+    .trofeo-titulo {
+        font-size: 5vw;
+        border-right: 0px;
+    }
+    .trofeo-titulo p {
+        text-align: left;
+    }
+}
 
 .trofeo-descripcion {
     font-size: 19px;
+}
+@media (max-width:768px) {
+    .trofeo-descripcion {
+        display: none;
+    }
 }
 
 .trofeo-platino {

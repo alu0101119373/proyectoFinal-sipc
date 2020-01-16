@@ -50,67 +50,67 @@ function get_trophies (id) {
             if (trofeo.id_juego == id) {
                 if (trofeo.tipo == '0') {
                     lista_trofeos.innerHTML += `
-                        <div class="trofeo trofeo-platino row justify-content-around m-1">
-                            <div class="container-fluid no-gutters col-1">
+                        <div class="trofeo trofeo-platino row justify-content-around m-sm-1 ml-3 mb-3">
+                            <div class="container-fluid no-gutters col-sm-1">
                                 <div class="trofeo-ico">
                                     <img src="img/trophies/trofeo_platino.png" style="width:84px; height:84px;" alt="trofeo platino">
                                 </div>
                             </div>
-                            <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
+                            <div class="container trofeo-titulo no-padding col-sm-4 col row align-items-center justify-content-center mb-3 mt-3">
                                 <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
                             </div>
-                            <div class="container trofeo-descripcion col-7 pl-4 row align-items-center">
+                            <div class="container trofeo-descripcion col-sm-7 pl-4 row align-items-center p-2">
                                 <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
                             </div>
                         </div>
                     `
                 } else if (trofeo.tipo == '1') {
                     lista_trofeos.innerHTML += `
-                        <div class="trofeo trofeo-bronce row justify-content-around m-1">
-                            <div class="container-fluid no-gutters col-1">
-                                <div class="trofeo-ico">
-                                    <img src="img/trophies/trofeo_bronce.png" style="width:84px; height:84px;" alt="trofeo bronce">
-                                </div>
-                            </div>
-                            <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                                <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                            </div>
-                            <div class="container trofeo-descripcion col-7 pl-4 row align-items-center">
-                                <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                    <div class="trofeo trofeo-bronce row justify-content-around m-sm-1 ml-3 mb-3">
+                        <div class="container-fluid no-gutters col-sm-1">
+                            <div class="trofeo-ico">
+                                <img src="img/trophies/trofeo_bronce.png" style="width:84px; height:84px;" alt="trofeo bronce">
                             </div>
                         </div>
+                        <div class="container trofeo-titulo no-padding col-sm-4 col row align-items-center justify-content-center mb-3 mt-3">
+                            <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
+                        </div>
+                        <div class="container trofeo-descripcion col-sm-7 pl-4 row align-items-center p-2">
+                            <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                        </div>
+                    </div>
                     `
                 } else if (trofeo.tipo == '2') {
                     lista_trofeos.innerHTML += `
-                        <div class="trofeo trofeo-plata row justify-content-around m-1">
-                            <div class="container-fluid no-gutters col-1">
-                                <div class="trofeo-ico">
-                                    <img src="img/trophies/trofeo_plata.png" style="width:84px; height:84px;" alt="trofeo plata">
-                                </div>
-                            </div>
-                            <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                                <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                            </div>
-                            <div class="container trofeo-descripcion col-7 pl-4 row align-items-center">
-                                <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                    <div class="trofeo trofeo-plata row justify-content-around m-sm-1 ml-3 mb-3">
+                        <div class="container-fluid no-gutters col-sm-1">
+                            <div class="trofeo-ico">
+                                <img src="img/trophies/trofeo_plata.png" style="width:84px; height:84px;" alt="trofeo plata">
                             </div>
                         </div>
+                        <div class="container trofeo-titulo no-padding col-sm-4 col row align-items-center justify-content-center mb-3 mt-3">
+                            <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
+                        </div>
+                        <div class="container trofeo-descripcion col-sm-7 pl-4 row align-items-center p-2">
+                            <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                        </div>
+                    </div>
                     `
                 } else {
                     lista_trofeos.innerHTML += `
-                        <div class="trofeo trofeo-oro row justify-content-around m-1">
-                            <div class="container-fluid no-gutters col-1">
-                                <div class="trofeo-ico">
-                                    <img src="img/trophies/trofeo_oro.png" style="width:84px; height:84px;" alt="trofeo oro">
-                                </div>
-                            </div>
-                            <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                                <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                            </div>
-                            <div class="container trofeo-descripcion col-7 pl-4 row align-items-center">
-                                <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                    <div class="trofeo trofeo-oro row justify-content-around m-sm-1 ml-3 mb-3">
+                        <div class="container-fluid no-gutters col-sm-1">
+                            <div class="trofeo-ico">
+                                <img src="img/trophies/trofeo_oro.png" style="width:84px; height:84px;" alt="trofeo oro">
                             </div>
                         </div>
+                        <div class="container trofeo-titulo no-padding col-sm-4 col row align-items-center justify-content-center mb-3 mt-3">
+                            <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
+                        </div>
+                        <div class="container trofeo-descripcion col-sm-7 pl-4 row align-items-center p-2">
+                            <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
+                        </div>
+                    </div>
                     `
                 }
             }
