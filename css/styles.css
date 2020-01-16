@@ -191,6 +191,10 @@ img {
     }
 }
 
+.nav-item {
+    width: 100%;
+}
+
 .navbar-style {
     background-color: #4A86E8;
 }
