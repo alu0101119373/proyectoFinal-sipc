@@ -23,8 +23,22 @@ h1 {
     font-size: 70px;
 }
 
+html {
+    width: 100vw;
+}
+
 body {
     background: #043565;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        background: white;
+    }   
+}
+
+img {
+    max-width: 100%;
 }
 
 .invalid-form {
@@ -54,8 +68,13 @@ body {
 }
 
 #background-page {
-    background: white;
-    width: 1200px;
+    background-color: white;
+    max-width: 1200px;
+}
+@media only screen and (max-width: 768px) {
+    #background-page {
+        min-width: 100%;
+    }
 }
 
 #login-page {
@@ -78,6 +97,11 @@ body {
     font-size: 28px;
     font-family: 'Mclaren';
     color: #FD6721;
+}
+@media only screen and (max-width: 768px) {
+    .no-a {
+        font-size: 5vw;
+    }
 }
 
 .a-login {
@@ -108,6 +132,15 @@ body {
     padding-top: 0;
 }
 
+@media (max-width:768px) {
+    .no-xs-padding {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
 .pd10 {
     padding: 10px;
 }
@@ -136,6 +169,15 @@ body {
     height: 120px;
     width: 120px;
 }
+@media only screen and (max-width:768px) {
+    .logo {
+        margin-left: 30px;
+    }
+
+    .banner h1 {
+        font-size: 7vw;
+    }
+}
 
 .navbar-style {
     background-color: #4A86E8;
@@ -152,6 +194,12 @@ body {
     color: #333333;
 }
 
+@media (max-width:768px) {
+    .acerca-de-pagina {
+        font-size: 6vw;
+    }
+}
+
 .footer {
     background-color: #022F3D;
     padding-top: 15px;
@@ -166,6 +214,11 @@ body {
     color: #FD6721;
     font-size: 17px;
     padding-right: 10px;
+}
+@media (max-width:768px) {
+    .footer-text {
+        font-size: 4vw;
+    }
 }
 
 .rd-logo {
@@ -202,6 +255,11 @@ body {
 .noticias_body {
     background-color: #043565;
 }
+@media (max-width: 768px) {
+    .noticias_body {
+        padding: 7px;
+    }
+}
 
 .tam_noticias {
     width: 100%px;
@@ -211,6 +269,11 @@ body {
 .text_noti {
     font-size: 30px;
     color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .text_noti {
+        font-size: 6vw;
+    }
 }
 
 .img_not {
@@ -237,9 +300,22 @@ body {
     width: 602px;
     height: 513px;
 }
+@media only screen and (max-width: 768px) {
+    .div_noticias {
+        width: 90vw;
+        height: 90vw;
+        padding: 0px;
+    }
+}
 
 .div_note {
     width: 474px
+}
+@media (max-width: 768px) {
+    .div_note {
+        width: 90vw;
+        padding: 0px;
+    }
 }
 
 .note {
