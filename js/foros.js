@@ -54,7 +54,7 @@ db.ref('foros').once('value', snap => {
     snap.val().forEach((foro, index) => {
         // Para cada foro, debemos mostrar toda la informacion tanto de la misma como del usuario
         // Accedemos a los datos del usuario
-        $('#lista-foros').append('<div id="foro-'+index+'"class="row no-padding no-gutters foro p-3 mb-2 mt-2 justify-content-center"></div>');
+        $('#lista-foros').append('<div id="foro-'+index+'"class="row no-padding no-gutters foro p-3 mb-2 mt-2 justify-content-center" style="cursor:pointer;"></div>');
         db.ref('usuarios/'+foro.id_usuario).once('value', snap => {
             $('#foro-'+index).prepend(`
                 <div class="col-4">
@@ -86,6 +86,29 @@ db.ref('foros').once('value', snap => {
                     </div>
                 </div>
         `);
+        $('#foro-'+index).prepend(`
+                <script>
+                    document.getElementById('foro-`+index+`').addEventListener('click', event => {
+                        getToForum(`+index+`);
+                    });
+                </script>
+        `);
         // document.getElementById('foro-'+foro.).removeAttribute('id');
     });
 });
+
+document.getElementById('crear-foro').addEventListener('click', event => {
+    document.location = 'crear-foro.html';
+});
+
+firebase.auth().onAuthStateChanged( user => {
+    if (user) {
+        $('#crear-foro').removeClass('hide-object');
+    } else {
+        $('#crear-foro').addClass('hide-object');
+    }
+});
+
+function getToForum (index) {    
+    window.location = 'foro.html?id='+index;
+}
