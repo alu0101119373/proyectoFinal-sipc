@@ -92,5 +92,5 @@ boton_nuevo_comentario.addEventListener('click', event => {
             });
         });
     });
-    window.location = 'foro.html?id=' + id;
+    setTimeout(() => { window.location = 'foro.html?id=' + id; }, 1000);
 });
