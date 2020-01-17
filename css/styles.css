@@ -28,12 +28,12 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background: #043565;
     width: 100%;
 }
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden;
         background: white;
     }   
 }
@@ -119,6 +119,43 @@ img {
 
 .a-login {
     font-size: 28px;
+}
+
+.col-user {
+    border-right: 2px solid #404040;
+}
+@media (max-width:768px) {
+    .col-user {
+        border-right: 0px;
+    }
+}
+
+.text-foros {
+    color: #333333;
+}
+
+.foro-text {
+    font-size: 24px;
+}
+
+.nombre-foro {
+    font-size: 29px;
+}
+@media (max-width: 1024px) {
+    .nombre-foro {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:768px) {
+    
+    .foro-text {
+        font-size: 3vw;
+    }
+    
+    .nombre-foro {
+        font-size: 4vw;
+    }   
 }
 
 .a-mail {
@@ -597,6 +634,27 @@ img {
     height: 109px;
     border: 1px solid #404040;
     border-radius: 50%;
+}
+@media (max-width:768px) {
+    .icon-foro {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+.titulo-creador {
+    margin-top:33px;
+}
+@media (max-width:768px) {
+    .titulo-creador {
+        /* margin: 10px; */
+        margin-top: 10px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .titulo-creador {
+        font-size: 2vw;
+    }
 }
 
 .cita-comentario {
