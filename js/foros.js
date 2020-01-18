@@ -57,31 +57,29 @@ db.ref('foros').once('value', snap => {
         $('#lista-foros').append('<div id="foro-'+index+'"class="row no-padding no-gutters foro p-3 mb-2 mt-2 justify-content-center" style="cursor:pointer;"></div>');
         db.ref('usuarios/'+foro.id_usuario).once('value', snap => {
             $('#foro-'+index).prepend(`
-                <div class="col-4">
+                <div class="col-md-4 col-lg-5 col-5">
                     <div class="row no-gutters no-padding justify-content-center">
-                        <div class="col-5">
+                        <div class="col-md-5">
                             <img src=` + snap.val().imagen + ` class="icon-foro">
                         </div>
-                        <div class="col-7 col-user align-items-center">
-                            <p class="no no-padding no-gutters text-foros foro-text align-self-center " style=margin-top:33px;>` + snap.val().nombre + `</p>
+                        <div class="col-md-7 col-user align-items-center">
+                            <p class="no-padding no-gutters text-foros foro-text align-self-center titulo-creador text-center">` + snap.val().nombre + `</p>
                         </div>
                     </div>
                 </div>
             `);
         });
         $('#foro-'+index).prepend(`
-                <div class="col-8 align-items-center">
-                    <div class="row justify-content-center no-gutters no-padding go-to-forum">
-                        <div class="col-8 align-items-center ">
-                            <p class="no-padding no-gutters text-foros nombre-foro pl-3">` + foro.titulo + `</p>
+                <div class="col-md-8 col-lg-7 col-7 align-items-center row justify-content-center no-gutters no-padding go-to-forum">
+                    <div class="col-md-8 align-items-center">
+                        <p class="no-padding no-gutters text-foros nombre-foro pl-3 text-center">` + foro.titulo + `</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row no-gutters no-padding justify-content-center ">
+                            <p class="text-foros foro-text no-gutters">` + foro.fecha_creacion + `</p>
                         </div>
-                        <div class="col-4 ">
-                            <div class="row no-gutters no-padding justify-content-center ">
-                                <p class="text-foros foro-text ">` + foro.fecha_creacion + `</p>
-                            </div>
-                            <div class="row no-gutters no-padding justify-content-center ">
-                                <p class="text-foros foro-text ">` + foro.hora_creacion + `</p>
-                            </div>
+                        <div class="row no-gutters no-padding justify-content-center ">
+                            <p class="text-foros foro-text">` + foro.hora_creacion + `</p>
                         </div>
                     </div>
                 </div>
