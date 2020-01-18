@@ -33,3 +33,7 @@ db.ref('guias').once('value', snap => {
         `
     }
 });
+
+document.getElementById('crear-guia').addEventListener('click', event => {
+    window.location = 'crear-guia.html';
+});

@@ -673,3 +673,70 @@ img {
     margin-left: 15px;
     font-size: 10px;
 }
+
+.section-title {
+    color: black;
+}
+
+.how_many_trophies {
+    margin-left: 10px;
+    width: 185px;
+}
+
+.color {
+    color: #FD6721;
+}
+
+.font-title {
+    font-size: 27px;
+}
+
+.font-informacion {
+    font-size: 19px;
+}
+
+.background-analisis {
+    margin-top: 20px;
+    background-color: #022F3D;
+    color: #FFFFFF;
+    font-size: 19px
+}
+
+.info_gen {
+    font-size: 24px;
+    color: #333333;
+    border-bottom: 2px solid #404040;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.body_infogen {
+    font-size: 24px;
+    color: #333333;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.trofeo-cuestionario {
+    width: 37px;
+    height: 37px;
+    border: 0;
+}
+
+.texto-datos-iniciales-guia {
+    font-size: 24px;
+    color: #333333;
+    width: 330px;
+}
+
+.new-comment p {
+    color: #FD6721;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-comment p:hover {
+    color: #CF4C0E;
+}
