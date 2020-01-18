@@ -33,6 +33,7 @@ body {
 }
 @media (max-width: 768px) {
     body {
+        overflow-x: hidden;
         background: white;
     }   
 }
@@ -603,4 +604,14 @@ img {
     font-style: italic;
     color: #333333;
     padding: 10px;
+}
+
+.button {
+    background-color: #FD6721;
+    color: #ffffff;
+    /* width: 30x;
+    height: 30px; */
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 10px;
 }

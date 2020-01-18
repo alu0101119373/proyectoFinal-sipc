@@ -66,7 +66,7 @@ googleSubmit.addEventListener('click', event => {
 
         registerUserData(googleUser.displayName, googleUser.email, '','');
 
-        window.location = 'index.html';
+        setTimeout(() => { window.location = 'index.html'; }, 1000);
 
     }).catch(error => {
         let errorCode = error.code;
