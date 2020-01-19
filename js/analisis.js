@@ -9,7 +9,7 @@ db.ref('analisis').once('value', snap => {
         <a class="no-a" href="` + data.url + `">
         <div class="row body-analisis no-padding no-gutters justify-content-center">
             <!-- Imagen -->
-            <div class="col-2 align-self-center">
+            <div class="col-2 align-self-center hide-xs-object">
                 <img src="` + data.img + `" class="img-analisis no-gutters no-padding" style="width:150px; height:150px;">
             </div>
             <div class="col-xl-10 align-items-center">
