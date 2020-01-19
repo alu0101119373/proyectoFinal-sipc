@@ -32,10 +32,11 @@ body {
     background: #043565;
     width: 100%;
 }
+
 @media (max-width: 768px) {
     body {
         background: white;
-    }   
+    }
 }
 
 img {
@@ -72,6 +73,7 @@ img {
     background-color: white;
     max-width: 1200px;
 }
+
 @media only screen and (max-width: 768px) {
     #background-page {
         min-width: 100%;
@@ -87,6 +89,7 @@ img {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
 @media (max-width: 768px) {
     #login-page {
         margin: 0;
@@ -100,6 +103,7 @@ img {
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
 @media (max-width: 768px) {
     #signin-page {
         margin: 0;
@@ -111,6 +115,7 @@ img {
     font-family: 'Mclaren';
     color: #FD6721;
 }
+
 @media only screen and (max-width: 768px) {
     .no-a {
         font-size: 5vw;
@@ -124,6 +129,7 @@ img {
 .col-user {
     border-right: 2px solid #404040;
 }
+
 @media (max-width:768px) {
     .col-user {
         border-right: 0px;
@@ -141,6 +147,7 @@ img {
 .nombre-foro {
     font-size: 29px;
 }
+
 @media (max-width: 1024px) {
     .nombre-foro {
         font-size: 2vw;
@@ -148,14 +155,12 @@ img {
 }
 
 @media (max-width:768px) {
-    
     .foro-text {
         font-size: 3vw;
     }
-    
     .nombre-foro {
         font-size: 4vw;
-    }   
+    }
 }
 
 .a-mail {
@@ -219,11 +224,11 @@ img {
     height: 120px;
     width: 120px;
 }
+
 @media only screen and (max-width:768px) {
     .logo {
         margin-left: 30px;
     }
-
     .banner h1 {
         font-size: 7vw;
     }
@@ -269,6 +274,7 @@ img {
     font-size: 17px;
     padding-right: 10px;
 }
+
 @media (max-width:768px) {
     .footer-text {
         font-size: 4vw;
@@ -309,6 +315,7 @@ img {
 .noticias_body {
     background-color: #043565;
 }
+
 @media (max-width: 768px) {
     .noticias_body {
         padding: 7px;
@@ -324,6 +331,7 @@ img {
     font-size: 30px;
     color: #FFFFFF;
 }
+
 @media (max-width: 768px) {
     .text_noti {
         font-size: 6vw;
@@ -354,6 +362,7 @@ img {
     width: 602px;
     height: 513px;
 }
+
 @media only screen and (max-width: 768px) {
     .div_noticias {
         width: 90vw;
@@ -365,6 +374,7 @@ img {
 .div_note {
     width: 474px
 }
+
 @media (max-width: 768px) {
     .div_note {
         width: 90vw;
@@ -418,9 +428,10 @@ img {
     border: 1px solid #666666;
     color: #333333;
 }
+
 @media (min-width:768px) {
     .trofeo {
-        height: 104px;        
+        height: 104px;
     }
 }
 
@@ -430,6 +441,7 @@ img {
     width: 84px;
     height: 84px;
 }
+
 @media (max-width:900px) {
     .trofeo-ico {
         display: none;
@@ -441,6 +453,7 @@ img {
     border-right: 3px solid #404040;
     font-size: 19px;
 }
+
 @media (max-width:768px) {
     .trofeo-titulo {
         font-size: 5vw;
@@ -454,6 +467,7 @@ img {
 .trofeo-descripcion {
     font-size: 19px;
 }
+
 @media (max-width:768px) {
     .trofeo-descripcion {
         display: none;
@@ -514,6 +528,7 @@ img {
     margin-left: 20px;
     margin-right: 10px;
 }
+
 @media (max-width:768px) {
     .img-analisis {
         display: none;
@@ -525,6 +540,7 @@ img {
 .link-container {
     border-bottom: 3px solid #FFFFFF;
 }
+
 @media (max-width:768px) {
     .link-container {
         border-bottom: 0px;
@@ -537,6 +553,7 @@ img {
     margin-bottom: 20px;
     color: #FFFFFF;
 }
+
 @media (max-width:768px) {
     .linktext-analisis {
         font-size: 3.5vw;
@@ -550,6 +567,7 @@ img {
     font-size: 16px;
     color: #333333;
 }
+
 @media (max-width: 768px) {
     .pagina-analisis {
         font-size: 4vw;
@@ -562,6 +580,7 @@ img {
     width: 142px;
     height: 23px;
 }
+
 @media (max-width:768px) {
     .box-analisis {
         font-size: 5vw;
@@ -574,15 +593,17 @@ img {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 @media (max-width:768px) {
     .valoraciones {
-        margin:0px;
+        margin: 0px;
     }
 }
 
 .valoraciones-analisis {
     font-size: 24px;
 }
+
 @media (max-width: 768px) {
     .valoraciones-analisis {
         font-size: 5vw;
@@ -630,11 +651,13 @@ img {
 }
 
 .icon-foro {
-    width: 109px;
-    height: 109px;
+    width: 55px;
+    height: 55px;
     border: 1px solid #404040;
     border-radius: 50%;
+    margin-left: 40px;
 }
+
 @media (max-width:768px) {
     .icon-foro {
         width: 25vw;
@@ -643,14 +666,16 @@ img {
 }
 
 .titulo-creador {
-    margin-top:33px;
+    margin-top: 33px;
 }
+
 @media (max-width:768px) {
     .titulo-creador {
         /* margin: 10px; */
         margin-top: 10px;
     }
 }
+
 @media (min-width:768px) and (max-width:1024px) {
     .titulo-creador {
         font-size: 2vw;
@@ -658,7 +683,7 @@ img {
 }
 
 .cita-comentario {
-    font-size: 19px;
+    font-size: 14px;
     font-style: italic;
     color: #333333;
     padding: 10px;

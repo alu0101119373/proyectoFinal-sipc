@@ -1,7 +1,7 @@
 var db = firebase.database();
 var userdata;
 
-firebase.auth().onAuthStateChanged( user => {
+firebase.auth().onAuthStateChanged(user => {
     if (user) {
         userdata = user;
         $('#formulario-nuevo-comentario').removeClass('hide-object');
@@ -18,16 +18,16 @@ var boton_nuevo_comentario = document.getElementById('add-comment');
 var titulo_foro = document.getElementById('titulo-foro');
 
 // Obtenemos el id del foro a leer
-var id = str.substring(str.indexOf('?')+1).substring(3);
+var id = str.substring(str.indexOf('?') + 1).substring(3);
 
-db.ref('foros/'+id).once('value', snap => {
+db.ref('foros/' + id).once('value', snap => {
     creador.innerHTML = '';
     var data = snap.val();
 
     titulo_foro.innerHTML = data.titulo;
 
-    db.ref('usuarios/'+data.id_usuario).once('value', snap => {
-        creador.innerHTML += '<p class="text-center font-italic pt-1">Creado por '+snap.val().nombre+' el '+data.fecha_creacion+' a las '+data.hora_creacion+'</p>';
+    db.ref('usuarios/' + data.id_usuario).once('value', snap => {
+        creador.innerHTML += '<p class="text-center font-italic pt-1">Creado por ' + snap.val().nombre + ' el ' + data.fecha_creacion + ' a las ' + data.hora_creacion + '</p>';
     });
 });
 
@@ -36,33 +36,34 @@ db.ref('comentarios_foros').once('value', snap => {
     snap.val().forEach((comentario, index) => {
         if (comentario.id_foro == id) {
             // Metemos los datos del usuario
-            lista_comentarios.innerHTML += '<div id="comentario-'+index+'" class="row no-padding no-gutters foro justify-content-start mt-2 mb-2"></div>'
-            db.ref('usuarios/'+comentario.id_usuario).once('value', snap => {
-                $('#comentario-'+index).prepend(`
-                <div class="col-4">
-                    <div class="row no-gutters no-padding justify-content-start" style="border-right: 2px solid #404040;">
-                        <div class="col-5" style="padding: 10px;">
-                            <img src="`+snap.val().imagen+`" class="icon-foro">
+            lista_comentarios.innerHTML += '<div id="comentario-' + index + '" class="row no-padding no-gutters foro justify-content-start mt-2 mb-2"></div>'
+            db.ref('usuarios/' + comentario.id_usuario).once('value', snap => {
+                $('#comentario-' + index).prepend(`
+                <div class="col-2" style="border-right: 2px solid #404040;">
+                    <div class="row no-gutters no-padding justify-content-start m-1">
+                        <div class="col-12" style="padding: 20px; padding-bottom: 0;">
+                            <img src="` + snap.val().imagen + `" class="icon-foro">
                         </div>
-                        <div class="col-6 col-user align-items-center">
-                            <div class="row justify-content-center">
-                                <p class="no-padding no-gutters text-comentario comentario-nombre" style=margin-top:20px;>`+snap.val().nombre+`</p>
+                        <div class="col-12 align-items-center">
+                            <div class="row justify-content-center no-gutters no-padding">
+                                <p class="no-padding no-gutters text-comentario comentario-nombre" style=margin-top:10px;>` + snap.val().nombre + `</p>
+                            </div>
+                            <div class="row no-gutters no-padding">
+                            <p class="cita-comentario text-center no-gutters">"` + snap.val().mensaje + `"</p>
                             </div>
                             <div class="row no-gutters no-padding justify-content-center">
-                                <p class="text-comentario foro-text no-gutters no-padding">`+comentario.fecha_publicacion+`</p>
+                                <p class="text-comentario comentario-fecha no-gutters no-padding">` + comentario.fecha_publicacion + `</p>
                             </div>
                             <div class="row no-gutters no-padding justify-content-center">
-                                <p class="text-comentario foro-text no-padding no-gutters">`+comentario.hora_publicacion+`</p>
+                                <p class="text-comentario comentario-fecha no-padding no-gutters">` + comentario.hora_publicacion + `</p>
                             </div>
                         </div>
-                        <div class="row no-gutters no-padding">
-                            <p class="cita-comentario no-gutters">"`+snap.val().mensaje+`"</p>
-                        </div>
+                        
                     </div>
                 </div>
-                <div class="col-8 align-items-center ">
+                <div class="col-10 align-items-center ">
                     <div class="row no-gutters no-padding ">
-                        <p class="no-padding no-gutters text-comntario nombre-foro p-3" style="max-width: 100%; margin-left: 5px;">`+comentario.comentario+`</p>
+                        <p class="no-padding no-gutters text-comentario comentario p-3" style="max-width: 100%; margin-left: 5px;">` + comentario.comentario + `</p>
                     </div>
                 </div>
                 `);
@@ -81,13 +82,13 @@ boton_nuevo_comentario.addEventListener('click', event => {
             snap.val().forEach((usuario, index) => {
                 if (usuario.email == userdata.email) {
                     // Añadimos a la base de datos
-                    db.ref('comentarios_foros/'+sz).set({
+                    db.ref('comentarios_foros/' + sz).set({
                         comentario: contenido,
-                        fecha_publicacion: hoy.getDate()+'-'+(hoy.getMonth()+1)+'-'+hoy.getFullYear(),
-                        hora_publicacion: hoy.getHours()+':'+hoy.getMinutes(),
+                        fecha_publicacion: hoy.getDate() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getFullYear(),
+                        hora_publicacion: hoy.getHours() + ':' + hoy.getMinutes(),
                         id_foro: id,
                         id_usuario: index
-                    }); 
+                    });
                 }
             });
         });

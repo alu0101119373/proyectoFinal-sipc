@@ -38,16 +38,16 @@ submitForm.addEventListener('click', event => {
 
     if (!error) {
         registerUserData($('#user').val(), $('#email').val(), $('#nacimiento').val(), $('#mensaje').val());
-        window.location = 'index.html';
+        setTimeout(() => { window.location = 'index.html'; }, 1000);
     }
 });
 
 // funciones para autenticacion
-function registerUserData (nombre, email, nacimiento, mensaje) {
+function registerUserData(nombre, email, nacimiento, mensaje) {
     // Determinamos el tamaño de la tabla
     db.ref('usuarios').once('value', snap => {
         var sz = snap.val().length;
-        db.ref('usuarios/'+sz).set({
+        db.ref('usuarios/' + sz).set({
             nombre: nombre,
             email: email,
             fecha_nacimiento: nacimiento,
@@ -59,12 +59,12 @@ function registerUserData (nombre, email, nacimiento, mensaje) {
 }
 
 googleSubmit.addEventListener('click', event => {
-    firebase.auth().signInWithPopup(GoogleProvider).then( result => {
+    firebase.auth().signInWithPopup(GoogleProvider).then(result => {
         var googleToken = result.credential.accessToken;
         googleUser = result.user;
         console.log(googleUser);
 
-        registerUserData(googleUser.displayName, googleUser.email, '','');
+        registerUserData(googleUser.displayName, googleUser.email, '', '');
 
         setTimeout(() => { window.location = 'index.html'; }, 1000);
 
@@ -73,17 +73,17 @@ googleSubmit.addEventListener('click', event => {
         let errorMessage = error.message;
         let email = error.email;
         let credential = error.credential;
-        console.log(errorCode+": Error while signing up with "+email+" ("+credential+"): "+errorMessage);
+        console.log(errorCode + ": Error while signing up with " + email + " (" + credential + "): " + errorMessage);
     });
 });
 
 // Funciones de validacion de campos
-function validateAll () {
-    
+function validateAll() {
+
     return validateUsername() && validatePassword() && validateConfirmPassword() && validateEmail() && validateConfirmEmail() && validatePersonalMessage();
 }
 
-function validateUsername () {
+function validateUsername() {
     let usuario = $('#user');
     if (usuario.val() == '') {
         usuario.removeClass('valid-form').removeClass('invalid-form');
@@ -108,8 +108,8 @@ function validateUsername () {
     return usuario.hasClass('valid-form');
 }
 
-function validatePassword () {
-    let password =  $("#passwd");
+function validatePassword() {
+    let password = $("#passwd");
     if (password.val() == '') {
         password.removeClass('valid-form').removeClass('invalid-form');
         return false;
@@ -124,8 +124,8 @@ function validatePassword () {
     }
 }
 
-function validateConfirmPassword () {
-    let cpassword =  $("#cpasswd");
+function validateConfirmPassword() {
+    let cpassword = $("#cpasswd");
     if (cpassword.val() == '') {
         cpassword.removeClass('valid-form').removeClass('invalid-form');
         return false;
@@ -140,7 +140,7 @@ function validateConfirmPassword () {
     }
 }
 
-function validateEmail () {
+function validateEmail() {
     let email = $("#email");
     if (email.val() == '') {
         email.removeClass('valid-form').removeClass('invalid-form');
@@ -149,7 +149,7 @@ function validateEmail () {
 
     let mail = email.val();
     if (mail.includes('@') && mail.includes('.', mail.indexOf('@'))) {
-        if (mail.substring(0, mail.indexOf('@')).length > 2 && mail.substring(mail.indexOf('@')+1, mail.indexOf('.')).length > 2 && mail.substring(mail.indexOf('.')+1).length >= 2) {
+        if (mail.substring(0, mail.indexOf('@')).length > 2 && mail.substring(mail.indexOf('@') + 1, mail.indexOf('.')).length > 2 && mail.substring(mail.indexOf('.') + 1).length >= 2) {
             email.removeClass('invalid-form').addClass('valid-form');
             return true;
         } else {
@@ -159,7 +159,7 @@ function validateEmail () {
     }
 }
 
-function validateConfirmEmail () {
+function validateConfirmEmail() {
     // TODO: Validar confirmacion de email
     let cemail = $('#cemail');
 
@@ -177,7 +177,7 @@ function validateConfirmEmail () {
     }
 }
 
-function validatePersonalMessage () {
+function validatePersonalMessage() {
     let mensajePersonal = $("#mensaje");
     if (mensajePersonal.val() == '') {
         mensajePersonal.removeClass('valid-form').removeClass('invalid-form');
