@@ -93,6 +93,19 @@ img {
     }
 }
 
+#perfil-page {
+    background: white;
+    width: 613px;
+    height: 800px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+    #perfil-page {
+        margin: 0;
+    }
+}
+
 #signin-page {
     background: white;
     width: 600px;
@@ -749,4 +762,29 @@ img {
 
 .info-text-guide {
     color: #333333;
+}
+
+.text-info-perfil {
+    color: #FD6721;
+    font-size: 15px;
+}
+
+.border-table {
+    border: 1px solid #DDDDDD;
+    background-color: #F3F3F3;
+}
+
+.border-table td, .border-table th {
+    border: 1px solid #DDDDDD;
+    border: 1px solid #DDDDDD;
+    padding: 5px;
+    text-align: center;
+}
+
+.border-table td {
+    cursor: pointer;
+}
+
+.border-table td:hover {
+    background-color: #1A936F;
 }

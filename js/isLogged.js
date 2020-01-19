@@ -9,6 +9,7 @@ firebase.auth().onAuthStateChanged( user => {
         // Accedemos a la base de datos
         db.ref('usuarios').once('value', snap => {
             for (userData of snap.val()) {
+                if (userData == null) continue;
                 if (userData.email == user.email) {
                     $('#logged-name').text(userData.nombre);
                     $('#logged-img').attr('src', userData.imagen);
@@ -22,6 +23,10 @@ firebase.auth().onAuthStateChanged( user => {
         $('#no-logged').removeClass('hide-object');
         $('#logged').addClass('hide-object');
     }
+});
+
+document.getElementById('perfilRequest').addEventListener('click', event => {
+    window.location = 'perfil.html';
 });
 
 document.getElementById('close-session').addEventListener('click', event => {
