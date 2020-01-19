@@ -667,6 +667,25 @@ img {
     border-radius: 50%;
     margin-left: 40px;
 }
+@media (max-width: 768px) {
+    .icon-foro {
+        width:3vw;
+        height:3vw;
+        margin-left: 0;
+    }   
+}
+
+
+.icon-foro-new {
+    width:110px;
+    height:110px;
+}
+@media (max-width: 768px) {
+    .icon-foro-new {
+        width:3vw;
+        height:3vw;
+    }   
+}
 
 @media (max-width:768px) {
     .icon-foro {

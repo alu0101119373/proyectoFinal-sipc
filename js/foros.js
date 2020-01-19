@@ -13,9 +13,9 @@ db.ref('foros').once('value', snap => {
                 <div class="col-md-4 col-lg-5 col-5">
                     <div class="row no-gutters no-padding justify-content-center">
                         <div class="col-md-5">
-                            <img src=` + snap.val().imagen + ` class="icon-foro" style="width:110px; height:110px;">
+                            <img src=` + snap.val().imagen + ` class="icon-foro icon-foro-new">
                         </div>
-                        <div class="col-md-7 col-user align-items-center">
+                        <div class="col-md-7 col-user align-items-center hide-xs-object">
                             <p class="no-padding no-gutters text-foros foro-text align-self-center titulo-creador text-center">` + snap.val().nombre + `</p>
                         </div>
                     </div>
