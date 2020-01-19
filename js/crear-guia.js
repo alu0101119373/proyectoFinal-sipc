@@ -52,6 +52,7 @@ db.ref('juegos/').once('value', snap => {
 });
 
 var lista_juegos = document.getElementById('select-game');
+var lista_consolas = document.getElementById('select-console');
 
 lista_juegos.addEventListener('change', () => {
     var valor = lista_juegos.value;
@@ -61,20 +62,30 @@ lista_juegos.addEventListener('change', () => {
         $('#guide-name').attr('value', 'Guía de trofeos de ' + lista_juegos.value);
     }
 
-    // Insertamos los trofeos
+
+    // Insertamos los trofeos y las consolas
     var selected_id = $('#select-game option:selected').attr('id');
 
     document.getElementById('lista-trofeos').innerHTML = '';
 
     if (valor != '----') {
+        console.log(valor);
         id_juego = selected_id.substring(selected_id.indexOf('-') + 1);
+
+        setAllowedConsoles(id_juego);
         get_trophies(id_juego);
+
+        $('#select-console').removeAttr('disabled');
     } else {
+        console.log(valor);
+
         document.getElementById('lista-trofeos').innerHTML = `
         <div class="container jumbotron">
             <p class="lead text-center text-muted font-italic">Todavía no has seleccionado ningún juego</p>
         </div>
         `;
+        lista_consolas.innerHTML = '';
+        $('#select-console').prop('disabled', true);
     }
 });
 
@@ -179,6 +190,18 @@ function new_comment (id_trofeo) {
     }
 }
 
+function setAllowedConsoles (id_juego) {
+    db.ref('juegos/'+id_juego).once('value', snap => {
+        console.log(snap.val().plataforma);
+
+        // Insertamos las plataformas en el selector
+        lista_consolas.innerHTML = '<option select=true>----</option>';
+        for (plat of snap.val().plataforma) {
+            lista_consolas.innerHTML += '<option>'+plat+'</option>';
+        }
+    });
+}
+
 function submitData() {
     // Obtenemos los datos
 
@@ -213,7 +236,7 @@ function submitData() {
     var comentarios_autor = $('#comentarios-autor-guia').val();
 
     // Consola
-    var consola = '...';
+    var consola = $('#select-console option:selected').val();
 
     // Nivel dificultad
     var nivel_dificultad = $('#dificultad-platino').val();

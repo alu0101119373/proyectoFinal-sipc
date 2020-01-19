@@ -10,7 +10,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Las mejores guías en español, los mejores análisis y la mejor comunidad que te puedas encontrar por Internet. ¡Únete a nosotros!">
+    <meta name="description"
+        content="Las mejores guías en español, los mejores análisis y la mejor comunidad que te puedas encontrar por Internet. ¡Únete a nosotros!">
     <meta name="keyword" content="videojuegos, juegos, analisis, guias, foros">
     <meta name="author" content="Himar Manuel Barquín Carrasco y Carlos Pío Reyes">
 
@@ -24,22 +25,22 @@
         .color {
             color: #FD6721;
         }
-        
+
         .font-title {
             font-size: 27px;
         }
-        
+
         .font-informacion {
             font-size: 19px;
         }
-        
+
         .background-analisis {
             margin-top: 20px;
             background-color: #022F3D;
             color: #FFFFFF;
             font-size: 19px
         }
-        
+
         .info_gen {
             font-size: 24px;
             color: #333333;
@@ -48,7 +49,7 @@
             margin-right: 30px;
             margin-bottom: 20px;
         }
-        
+
         .body_infogen {
             font-size: 19px;
             color: #FD6721;
@@ -67,11 +68,11 @@
             <div class="container-fluid no-padding">
                 <div class="container-head">
                     <div class="row container-fluid no-gutters no-padding justify-content-around">
-                        <div class="col-7">
+                        <div class="col-xl-7 col">
                             <img src="img/logo-trophiegames.png" alt="Responsive image" class="logo">
                         </div>
-                        <div id="no-logged" class="row hide-object">
-                            <div class="row align-items-center mx-3">
+                        <div id="no-logged" class="row hide-object col">
+                            <div class="row align-items-center col-sm mx-3">
                                 <div class="col-2">
                                     <img src="img/signup.png" width="25px" height="25px" alt="Responsive image">
                                 </div>
@@ -79,7 +80,7 @@
                                     <a href="signin.html" class="no-a">Registrarse</a>
                                 </div>
                             </div>
-                            <div class="row align-items-center mx-3">
+                            <div class="row align-items-center col-sm mx-3">
                                 <div class="col-2">
                                     <img src="img/login.png" width="25px" height="25px" alt="Responsive image">
                                 </div>
@@ -94,10 +95,13 @@
                             </div>
                             <div class="col-3">
                                 <div class="btn-group">
-                                    <button id="logged-name" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"></button>
+                                    <button id="logged-name" type="button" class="btn btn-secondary dropdown-toggle"
+                                        data-toggle="dropdown" data-display="static" aria-haspopup="true"
+                                        aria-expanded="false"></button>
                                     <div class="dropdown-menu dropdown-menu-lg-right">
                                         <button class="dropdown-item" type="button">Perfil</button>
-                                        <button id="close-session" class="dropdown-item" type="button">Cerrar sesión</button>
+                                        <button id="close-session" class="dropdown-item" type="button">Cerrar
+                                            sesión</button>
                                     </div>
                                 </div>
                             </div>
@@ -112,12 +116,13 @@
                     </div>
                 </div>
                 <div class="container-fluid no-padding">
-                    </li>
                     <nav class="navbar navbar-style navbar-expand-lg nav-justified container-fluid no-padding nav-justified">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" style="width: 100%;" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><img src="img/menu.svg"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav container-fluid justify-content-around no-padding">
                                 <li class="nav-item">
                                     <a class="nav-link navbar-a" href="index.html">Inicio <span
@@ -127,13 +132,13 @@
                                     <a class="nav-link navbar-a" href="pagina-juegos.html">Juegos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navbar-a active" href="#">Guías</a>
+                                    <a class="nav-link navbar-a" href="guias.html">Guías</a>
                                 </li>
                                 <li class="nav-item no-gutters">
                                     <a class="nav-link navbar-a" href="analisis.html">Analisis</a>
                                 </li>
                                 <li class="nav-item no-gutters">
-                                    <a class="nav-link navbar-a" href="#">Foros</a>
+                                    <a class="nav-link navbar-a" href="foros.html">Foros</a>
                                 </li>
                             </ul>
                         </div>
@@ -143,13 +148,14 @@
         </header>
         <div class="container-fluid no-padding no-gutters" id="" style=margin-top:30px>
             <!--cabecera de la guia-->
-            <div class="row no-gutters no-padding justify-content-around">
-                <div class="col-5 align-items-center">
-                    <p class="color font-title no-padding no-gutters" style="text-align: center;">Guia de trofeos</p>
-                    <p class="color font-title no-gutters no-padding" style="text-align: center;">Batman Arkham City</p>
-                </div>
-                <div class="col-6">
-                    <table class="table" style="margin-right: 30px">
+            <div class="row no-gutters no-padding justify-content-center">
+                <h2 id="nombre-guia" class="col-12 text-center pb-4"></h2>
+                <!-- <div class="col-5 align-items-center" style="max-width: 280px;">
+                    <p id="nombre-guia" class="color font-title no-padding no-gutters text-center" style="text-align: center;"></p>
+                </div> -->
+                <!-- Valoracion de usuarios -->
+                <div class="container-fluid col-xl-6 pl-3">
+                    <table class="table">
                         <thead style="background-color: #022F3D;">
                             <tr class="border border-dark">
                                 <th class="text-center" style="color: white; font-size: 19px;" scope="col" colspan="2">Análisis de los usuarios</th>
@@ -158,197 +164,116 @@
                         <tbody>
                             <tr>
                                 <td class="border border-dark">
-                                    <p id="porc-positivos" class="text-center no-gutters" style="font-size: 32px; color:#55CF56;">V</p><br />
+                                    <p id="porc-positivos" class="text-center no-gutters" style="font-size: 32px; color:#55CF56;"></p><br />
                                     <p class="text-center" style="font-size: 21px;">positivos</p>
                                 </td>
                                 <td class="border border-dark">
-                                    <p id="porc-negativos" class="text-center no-gutters" style="font-size: 32px; color:#E82611;">V</p><br />
+                                    <p id="porc-negativos" class="text-center no-gutters" style="font-size: 32px; color:#E82611;"></p><br />
                                     <p class="text-center" style="font-size: 21px;">negativos</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <div class="container">
+                        <p id="valoraciones-totales" style="font-size: 18px;"></p>
+                    </div>
                 </div>
             </div>
             <!---->
             <!--Informacion general-->
             <div class="row no-padding no-gutters info_gen">
-                <p>Información general</p>
+                <h3 class="section-title">Información general</h3>
             </div>
-            <div class="row no-gutters no-padding body_infogen">
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Dificultad del platino: <span></span></p>
+            <div class="row no-gutters no-padding body_infogen p-1 pt-2 pb-2">
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Dificultad del platino: <span
+                            class="info-text-guide" id="dificultad-platino"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Duración estimada para el platino: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Duración estimada para el platino: <span
+                            class="info-text-guide" id="duracion-estimada"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos offline: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos offline: <span
+                            class="info-text-guide" id="trofeos-offline"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos online: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos online: <span
+                            class="info-text-guide" id="trofeos-online"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Mínimo de partidas para el platino: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Mínimo de partidas para el platino:
+                        <span class="info-text-guide" id="minimo-partidas"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos perdibles: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Trofeos perdibles: <span
+                            class="info-text-guide" id="trofeos-perdibles"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">¿Activar trucos afecta a los trofeos? <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">¿Activar trucos afecta a los trofeos?
+                        <span class="info-text-guide" id="activar-trucos"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">¿Influye la dificultad en los trofeos? <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">¿Influye la dificultad en los trofeos?
+                        <span class="info-text-guide" id="influye-dificultad"></span></p>
                 </div>
-                <div class="row no-padding no-gutters" style="width: 100%;">
-                    <p class="no-padding no-gutters" style="margin-left: 10px;">Total de trofeos: <span></span></p>
+                <div class="row pt-1 pb-1 no-padding no-gutters" style="width: 100%;">
+                    <p class="no-padding no-gutters" style="margin-left: 10px;">Total de trofeos: <span
+                            class="info-text-guide" id="total-trofeos"></span></p>
                 </div>
             </div>
             <!---->
             <!--comentarios del autor-->
-            <div class="row info_gen no-padding no-gutters">
-                <p>Comentarios del autor de la guía</p>
+            <div class="row no-padding no-gutters info_gen">
+                <h3 class="section-title">Comentarios del autor de la guía</h3>
             </div>
-            <div class="row no-gutters no-padding body_infogen">
-                <p class="no-padding no-gutters" style="margin-left: 10px;">Consejos para la primera partida:</p>
-                <p style="color: #333333; margin-left: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum, enim ac auctor luctus, erat libero tempus mi, eu vulputate ligula sapien in ligula. Vestibulum viverra, ipsum ac convallis aliquam, nunc nunc eleifend tortor, id tincidunt
-                    lorem sapien finibus diam. Integer quis tortor aliquam lectus auctor convallis. Aenean facilisis felis ullamcorper nunc faucibus, nec posuere ante tincidunt. Phasellus nec purus ac massa elementum hendrerit non ac arcu. Ut elementum
-                    est in vestibulum sollicitudin. Proin at justo enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eu purus quis ex cursus porta vel eu nibh. In aliquam mauris at varius iaculis. Nullam
-                    libero dolor, rutrum ac malesuada id, dignissim et odio. Etiam sit amet ex viverra, sagittis risus sed, viverra nulla. Ut quis lacus et orci ultrices viverra a nec enim. Proin porta iaculis fringilla. Nam ligula dui, luctus sit amet
-                    mollis porttitor, tempor ut mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ornare non urna ut egestas. Cras lorem quam, varius vitae risus sodales, interdum vestibulum augue. Donec mattis ac nibh a placerat.
-                    Praesent non eros sit amet ante vulputate posuere. Nunc dui sapien, ornare nec fringilla sed, fringilla nec purus. Suspendisse ac elementum tortor. Nullam ullamcorper dolor eget sagittis malesuada. Integer elementum arcu enim, non
-                    tempor libero venenatis at. Donec finibus accumsan leo nec vehicula. Etiam tincidunt tempus lorem ut auctor. Phasellus quis viverra felis, et placerat dolor. Sed a neque velit. Integer at velit lobortis, pharetra mauris nec, suscipit
-                    diam.
-                </p>
+            <div class="row no-gutters no-padding body_infogen p-1 pt-2 pb-2">
+                <p class="no-padding no-gutters col-12" style="margin-left: 10px;">Consejos para la primera partida:</p>
+                <p id="comentarios-autor" class="no-gutters text-justify pt-2"
+                    style="color: #333333; margin-left: 10px;"></p>
             </div>
             <!---->
             <!--trofeos-->
-            <div class="row info_gen">
-                <p>Lista de trofeos</p>
+            <div class="row no-padding no-gutters info_gen">
+                <h3 class="section-title">Lista de trofeos</h3>
             </div>
-            <div class="trofeo trofeo-platino row" style="margin-left:20px; margin-top: 5px;">
-                <div class="container-fluid no-gutters col-1">
-                    <div class="trofeo-ico">
-                        <img src="img/trophies/trofeo_platino.png" style="width:84px; height:84px;" alt="trofeo platino">
-                    </div>
-                </div>
-                <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                    <p class="no-padding no-gutters">Platino</p>
-                </div>
-                <div class="container trofeo-descripcion col-7 pl-4 row align-items-center justify-content-around">
-                    <p class="no-padding no-gutters">Enhorabuena</p>
-                </div>
-            </div>
-            <p style="margin-left: 10px;">
-                <a class="no-a" data-toggle="collapse" href="#collapse0" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px">
-                  +spoiler
-                </a>
-            </p>
-            <div class="collapse" id="collapse0">
-                <div class="card card-body body_infogen">
-                    <p style="color: #333333;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure explicabo rem animi odit eveniet vel ut ex magni blanditiis!</p>
-                </div>
-            </div>
-            <div class="trofeo trofeo-bronce row" style="margin-left:20px; margin-top: 5px;">
-                <div class="container-fluid no-gutters col-1">
-                    <div class="trofeo-ico">
-                        <img src="img/trophies/trofeo_bronce.png" style="width:84px; height:84px;" alt="trofeo bronce">
-                    </div>
-                </div>
-                <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                    <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                </div>
-                <div class="container trofeo-descripcion col-7 pl-4 row align-items-center justify-content-around">
-                    <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
-                </div>
-            </div>
-            <p style="margin-left: 10px;">
-                <a class="no-a" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px">
-                  +spoiler
-                </a>
-            </p>
-            <div class="collapse" id="collapse1">
-                <div class="card card-body body_infogen">
-                    <p style="color: #333333;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odit similique corrupti numquam modi! Necessitatibus velit fugit beatae accusamus. Sapiente.</p>
-                </div>
-            </div>
-            <div class="trofeo trofeo-plata row" style="margin-left:20px; margin-top: 5px;">
-                <div class="container-fluid no-gutters col-1">
-                    <div class="trofeo-ico">
-                        <img src="img/trophies/trofeo_plata.png" style="width:84px; height:84px;" alt="trofeo plata">
-                    </div>
-                </div>
-                <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                    <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                </div>
-                <div class="container trofeo-descripcion col-7 pl-4 row align-items-center justify-content-around">
-                    <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
-                </div>
-            </div>
-            <p style="margin-left: 10px;">
-                <a class="no-a" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px">
-                  +spoiler
-                </a>
-            </p>
-            <div class="collapse" id="collapse2">
-                <div class="card card-body body_infogen">
-                    <p style="color: #333333;"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta explicabo tempore nemo aperiam repellat ratione quia vero iste quibusdam est.</p>
-                </div>
-            </div>
-            <div class="trofeo trofeo-oro row" style="margin-left:20px; margin-top: 5px;">
-                <div class="container-fluid no-gutters col-1">
-                    <div class="trofeo-ico">
-                        <img src="img/trophies/trofeo_oro.png" style="width:84px; height:84px;" alt="trofeo oro">
-                    </div>
-                </div>
-                <div class="container trofeo-titulo no-padding col-4 row align-items-center justify-content-center mb-3 mt-3">
-                    <p class="no-padding no-gutters">`+trofeo.titulo+`</p>
-                </div>
-                <div class="container trofeo-descripcion col-7 pl-4 row align-items-center justify-content-around">
-                    <p class="no-padding no-gutters">`+trofeo.descripcion+`</p>
-                </div>
-            </div>
-            <p style="margin-left: 10px;">
-                <a class="no-a" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-size: 20px">
-                  +spoiler
-                </a>
-            </p>
-            <div class="collapse" id="collapse3">
-                <div class="card card-body body_infogen">
-                    <p style="color: #333333;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta explicabo tempore nemo aperiam repellat ratione quia vero iste quibusdam est.</p>
-                </div>
-            </div>
+            <div id="lista-trofeos" class="container pb-4"></div>
             <!---->
 
         </div>
-        <footer class="footer footer-analisis ">
-            <div class="row container-fluid no-gutters no-padding justify-content-around ">
-                <div class="col-4 ">
-                    <h2>Autores</h2>
-                    <p class="footer-text no-gutters ">Carlos Pío Reyes.</p>
-                    <p class="footer-text no-gutters ">Himar Manuel Barquin Carrasco.</p>
+        <footer class="footer">
+            <div class="row container-fluid no-gutters no-padding justify-content-xl-around justify-content-center">
+                <!-- Parte izquierda -->
+                <div class="container col-xl-5 pl-xl-5 ml-5">
+                    <div>
+                        <h2>Autores</h2>
+                        <div class="container-fluid">
+                            <p class="footer-text no-gutters">Carlos Pío Reyes.</p>
+                            <p class="footer-text no-gutters">Himar Manuel Barquin Carrasco.</p>
+                        </div>
+                    </div>
+                    <div class="container pt-3">
+                        <a href="https://twitter.com/trophiegames" class="no-a mr-2"><img src="img/tw_logo.png" class="rd-logo"></a>
+                        <a href="#" class="ml-2 mr-2"><img src="img/ig_logo.png" class="rd-logo"></a>
+                        <a href="https://www.youtube.com/channel/UC21KFMHOlI25aLmMSikMujA" class="mr-2"><img src="img/yt_logo.png" class="rd-logo"></a>
+                    </div>
                 </div>
-                <div class="col-5 ">
+                <!-- Parte derecha -->
+                <div class="col-xl-5 ml-5">
                     <h3>TrophieGames Inc.</h3>
                     <div class="row container-fluid ">
-                        <p class="footer-text no-gutters ">Todos los derechos reservados</p>
-                        <img src="img/cc_logo.png " class="cc-logo ">
+                        <p class="footer-text no-gutters">Todos los derechos reservados</p>
+                        <img src="img/cc_logo.png" class="cc-logo">
                     </div>
-                    <div class="row container-fluid ">
-                        <p class="footer-text no-gutters ">Para ponerte en contacto con nosotros, envianos un mensaje a esta dirrección de correo:</p>
+                    <div class="row container-fluid">
+                        <p class="footer-text no-gutters">Para ponerte en contacto con nosotros, envianos un mensaje a
+                            esta dirrección de correo:</p>
                     </div>
-                </div>
-            </div>
-            <div class="row container-fluid justify-content-around ">
-                <div class="col-4 align-items-center ">
-                    <a href="https://twitter.com/trophiegames " class="no-a "><img src="img/tw_logo.png " class="rd-logo "></a>
-                    <a href="# "><img src="img/ig_logo.png " class="rd-logo "></a>
-                    <a href="https://www.youtube.com/channel/UC21KFMHOlI25aLmMSikMujA "><img src="img/yt_logo.png " class="rd-logo "></a>
-                </div>
-                <div class="col-4 ">
-                    <div class="row container-fluid justify-content-end no-gutters ">
-                        <img src="img/gmail_logo.png " class="gm-logo ">
-                        <p class="footer-text no-gutters align-self-center "><a class="no-a a-mail " href="mailto:throphiegamesofficial@gmail.com ">throphiegamesofficial@gmail.com</a></p>
+                    <div class="row container justify-content-xl-end no-gutters no-xs-padding pr-5">
+                        <img src="img/gmail_logo.png" class="gm-logo">
+                            <p class="footer-text no-gutters align-self-center col-7 pr-3"><a class="no-a a-mail"
+                                    href="mailto:throphiegamesofficial@gmail.com">throphiegamesofficial@gmail.com</a>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -357,8 +282,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
     <script src="js/bootstrap.min.js "></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -373,7 +302,7 @@
     <script src="js/firebase.js "></script>
     <script src="js/isLogged.js "></script>
 
-    <script src="js/foros.js "></script>
+    <script src="js/guia.js "></script>
 
 </body>
 
