@@ -30,7 +30,7 @@ db.ref('usuarios').once('value', snap => {
 
 function changePhoto (file) {
 
-    var ref = storageRef.child('profile-images/'+file.name);
+    var ref = storageRef.child('profile-images/'+userdata.email+'-profile_image-'+file.name);
 
     ref.put(file).then ( snapshot => {
         ref.getDownloadURL().then ( url => {
