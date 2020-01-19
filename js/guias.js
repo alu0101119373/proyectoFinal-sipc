@@ -20,7 +20,7 @@ db.ref('guias').once('value', snap => {
         db.ref('juegos/'+data.id_juego).once('value', snap => {
             $('#guia-'+index).prepend(`
             
-                <div class="col-1 align-self-center">
+                <div class="col-xl-1 col-3 align-self-center">
                     <img src="` + snap.val().url + `" class="img-analisis no-gutters no-padding">
                 </div>
                 <div class="col-9 align-items-center" style="height: 75px;">
@@ -30,7 +30,7 @@ db.ref('guias').once('value', snap => {
                         </div>
                     </div>
                 </div>
-                <div class="container col-2 row align-items-center justify-content-center">
+                <div class="container col-2 row align-items-center justify-content-center hide-xs-object">
                     <p class="col-12 text-center time-guide no-gutters no-pasddinga align-self-end">`+data.fecha_creacion+`</p>
                     <p class="col-12 text-center time-guide no-gutters no-padding align-self-start">`+data.hora_creacion+`</p>
                 </div>

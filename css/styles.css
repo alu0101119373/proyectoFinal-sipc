@@ -536,7 +536,7 @@ img {
 
 @media (max-width:768px) {
     .img-analisis {
-        display: none;
+        /* display: none; */
     }
 }
 
@@ -621,6 +621,12 @@ img {
 
 .hide-object {
     display: none;
+}
+
+@media (max-width:768px) {
+    .hide-xs-object {
+        display: none;
+    }
 }
 
 .enlace-form {
