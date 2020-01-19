@@ -441,6 +441,12 @@ img {
     }
 }
 
+@media (max-width:768px) {
+    .trofeo {
+        width: 90vw;
+    }
+}
+
 .trofeo-ico {
     margin: 10px;
     background-color: white;
