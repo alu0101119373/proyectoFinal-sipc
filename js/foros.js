@@ -7,13 +7,13 @@ db.ref('foros').once('value', snap => {
     snap.val().forEach((foro, index) => {
         // Para cada foro, debemos mostrar toda la informacion tanto de la misma como del usuario
         // Accedemos a los datos del usuario
-        $('#lista-foros').append('<div id="foro-'+index+'"class="row no-padding no-gutters foro p-3 mb-2 mt-2 justify-content-center" style="cursor:pointer;"></div>');
-        db.ref('usuarios/'+foro.id_usuario).once('value', snap => {
-            $('#foro-'+index).prepend(`
+        $('#lista-foros').append('<div id="foro-' + index + '"class="row no-padding no-gutters foro p-3 mb-2 mt-2 justify-content-center" style="cursor:pointer;"></div>');
+        db.ref('usuarios/' + foro.id_usuario).once('value', snap => {
+            $('#foro-' + index).prepend(`
                 <div class="col-md-4 col-lg-5 col-5">
                     <div class="row no-gutters no-padding justify-content-center">
                         <div class="col-md-5">
-                            <img src=` + snap.val().imagen + ` class="icon-foro">
+                            <img src=` + snap.val().imagen + ` class="icon-foro" style="width:110px; height:110px;">
                         </div>
                         <div class="col-md-7 col-user align-items-center">
                             <p class="no-padding no-gutters text-foros foro-text align-self-center titulo-creador text-center">` + snap.val().nombre + `</p>
@@ -22,7 +22,7 @@ db.ref('foros').once('value', snap => {
                 </div>
             `);
         });
-        $('#foro-'+index).prepend(`
+        $('#foro-' + index).prepend(`
                 <div class="col-md-8 col-lg-7 col-7 align-items-center row justify-content-center no-gutters no-padding go-to-forum">
                     <div class="col-md-8 align-items-center">
                         <p class="no-padding no-gutters text-foros nombre-foro pl-3 text-center">` + foro.titulo + `</p>
@@ -37,10 +37,10 @@ db.ref('foros').once('value', snap => {
                     </div>
                 </div>
         `);
-        $('#foro-'+index).prepend(`
+        $('#foro-' + index).prepend(`
                 <script>
-                    document.getElementById('foro-`+index+`').addEventListener('click', event => {
-                        getToForum(`+index+`);
+                    document.getElementById('foro-` + index + `').addEventListener('click', event => {
+                        getToForum(` + index + `);
                     });
                 </script>
         `);
@@ -52,7 +52,7 @@ document.getElementById('crear-foro').addEventListener('click', event => {
     document.location = 'crear-foro.html';
 });
 
-firebase.auth().onAuthStateChanged( user => {
+firebase.auth().onAuthStateChanged(user => {
     if (user) {
         $('#crear-foro').removeClass('hide-object');
     } else {
@@ -60,6 +60,6 @@ firebase.auth().onAuthStateChanged( user => {
     }
 });
 
-function getToForum (index) {    
-    window.location = 'foro.html?id='+index;
+function getToForum(index) {
+    window.location = 'foro.html?id=' + index;
 }

@@ -6,10 +6,11 @@ db.ref('analisis').once('value', snap => {
     analisis.innerHTML = '';
     for (data of snap.val()) {
         analisis.innerHTML += `
+        <a class="no-a" href="` + data.url + `">
         <div class="row body-analisis no-padding no-gutters justify-content-center">
             <!-- Imagen -->
             <div class="col-2 align-self-center">
-                <img src="` + data.img + `" class="img-analisis no-gutters no-padding">
+                <img src="` + data.img + `" class="img-analisis no-gutters no-padding" style="width:150px; height:150px;">
             </div>
             <div class="col-xl-10 align-items-center">
                 <div class="row no-gutters no-padding link-container">
@@ -20,9 +21,9 @@ db.ref('analisis').once('value', snap => {
                     </div>
                     <div class="col-xl-10 align-items-center">
                         <div class="row no-gutters no-padding justify-content-center">
-                            <a class="no-a" href="` + data.url + `">
+                            
                                 <p class="no-padding no-gutters linktext-analisis">` + data.nombre + `</p>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="container row no-padding no-gutters">
@@ -40,6 +41,7 @@ db.ref('analisis').once('value', snap => {
                 </div>
             </div>
         </div>
+        </a>
         `
     }
 });
