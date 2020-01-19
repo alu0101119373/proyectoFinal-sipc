@@ -382,15 +382,6 @@ img {
     }
 }
 
-.note {
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-}
-
-.note:hover {
-    background-color: #104557;
-}
-
 .note_text {
     color: #333333;
     font-size: 20px;
@@ -400,10 +391,12 @@ img {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    border: 1px solid #000000;
 }
 
 .note_text:hover {
     color: #FFFFFF;
+    background-color: #104557;
 }
 
 .note-top {
@@ -764,4 +757,12 @@ img {
 
 .new-comment p:hover {
     color: #CF4C0E;
+}
+
+.carousel-img {
+    height: 560px;
+}
+
+.carousel-h5 {
+    color: #FFFFFF;
 }
